@@ -7415,3 +7415,646 @@ fall back to random search.
 2024-06-06 11:58:41,887 [INFO]: summary for 30-th query, current Pareto hypervolume: 6.10356163092304, cost: 899096.1064978612.
 2024-06-06 11:58:41,888 [INFO]: summary for the solution, the best Pareto hypervolume: 6.10356163092304, cost: 899096.1064978612.
 2024-06-06 11:58:41,890 [INFO]: save the experiment result. please refer them to D:\2024spring\EDA\EE215A_project\EE215A_project\Resource\Problem C_cases_0622\output\summary\00ef538e88634ddd9810d034b748c24d.rpt.
+2024-06-06 15:13:34,271 [INFO]: Prolem C @ ICCAD'22 contest platform version: 0.0.9
+2024-06-06 15:13:34,271 [INFO]: load solution settings: {'optimizer': 'fmin_l_bfgs_b', 'random_state': 2022}
+2024-06-06 15:13:34,272 [INFO] use UUID 00ef538e88634ddd9810d034b748c24d to reproduce the experiment results.
+2024-06-06 15:13:34,827 [INFO]: 1-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 6, 6, 14, 34, 52, 48, 8, 8, 32, 8, 1, 32, 64, 4, 1, 2, 1, 32], [4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 6, 6, 14, 36, 62, 58, 12, 12, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 32, 42, 38, 12, 12, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8], [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 36, 62, 58, 6, 6, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], [4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 10, 12, 20, 30, 42, 38, 12, 12, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 12, 16, 32, 64, 70, 54, 12, 12, 64, 1, 1, 16, 64, 4, 0, 2, 1, 32], [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 10, 14, 30, 72, 80, 64, 20, 20, 32, 4, 1, 16, 64, 4, 1, 2, 1, 32], [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 14, 20, 36, 60, 70, 54, 20, 20, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], [4, 2, 2, 2, 14, 2, 2, 24, 2, 2, 20, 12, 16, 32, 64, 90, 74, 20, 20, 32, 8, 1, 32, 64, 4, 1, 2, 1, 8], [8, 3, 3, 2, 20, 3, 3, 36, 3, 3, 28, 18, 30, 36, 96, 90, 86, 24, 24, 64, 8, 1, 32, 64, 2, 0, 4, 1, 32], [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 60, 70, 54, 12, 12, 64, 4, 1, 32, 64, 4, 1, 2, 1, 8], [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 70, 54, 16, 16, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 10, 14, 30, 60, 70, 54, 20, 20, 64, 1, 1, 16, 64, 4, 0, 2, 1, 32], [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 14, 20, 36, 64, 70, 54, 16, 16, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 80, 64, 12, 12, 64, 4, 1, 32, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0014147758483886719.
+2024-06-06 15:13:34,829 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 6, 6, 14, 34, 52, 48, 8, 8, 32, 8, 1, 32, 64, 4, 1, 2, 1, 32], norm. performance: -1.1646875762196882, norm. power: -1.0030972980072792, norm. area: -0.9325276614959733, time of the VLSI flow: 11223.3227.
+2024-06-06 15:13:34,831 [INFO]: evaluate 2-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 6, 6, 14, 36, 62, 58, 12, 12, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.1179679870772135, norm. power: -1.0030972980072792, norm. area: -0.92638464594161, time of the VLSI flow: 10443.99227.
+2024-06-06 15:13:34,833 [INFO]: evaluate 3-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 32, 42, 38, 12, 12, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.1179679870772135, norm. power: -1.0030972980072792, norm. area: -0.978949117933987, time of the VLSI flow: 11204.23608.
+2024-06-06 15:13:34,836 [INFO]: evaluate 4-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 36, 62, 58, 6, 6, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.2250267062587095, norm. power: -1.0030972980072792, norm. area: -0.949128636553759, time of the VLSI flow: 10236.07127.
+2024-06-06 15:13:34,838 [INFO]: evaluate 5-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 10, 12, 20, 30, 42, 38, 12, 12, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -1.1354067643098287, norm. power: -1.0030972980072792, norm. area: -0.9559000434610075, time of the VLSI flow: 10844.92708.
+2024-06-06 15:13:34,840 [INFO]: evaluate 6-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 12, 16, 32, 64, 70, 54, 12, 12, 64, 1, 1, 16, 64, 4, 0, 2, 1, 32], norm. performance: 0.006396539162745998, norm. power: -0.030090943799826016, norm. area: -0.437475451962641, time of the VLSI flow: 13894.2623.
+2024-06-06 15:13:34,842 [INFO]: evaluate 7-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 10, 14, 30, 72, 80, 64, 20, 20, 32, 4, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -0.15775149741516778, norm. power: -0.3725790758664567, norm. area: -0.5014193673939702, time of the VLSI flow: 14454.06701.
+2024-06-06 15:13:34,844 [INFO]: evaluate 8-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 14, 20, 36, 60, 70, 54, 20, 20, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: 0.1655257346508645, norm. power: -0.6220853235677636, norm. area: -0.6617076908655323, time of the VLSI flow: 18897.6841.
+2024-06-06 15:13:34,847 [INFO]: evaluate 9-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 14, 2, 2, 24, 2, 2, 20, 12, 16, 32, 64, 90, 74, 20, 20, 32, 8, 1, 32, 64, 4, 1, 2, 1, 8], norm. performance: -0.25460580489888807, norm. power: -0.046510942188268636, norm. area: -0.6667460338467022, time of the VLSI flow: 18125.26494.
+2024-06-06 15:13:34,850 [INFO]: evaluate 10-th candidate in a batch, microarchitecture embedding: [8, 3, 3, 2, 20, 3, 3, 36, 3, 3, 28, 18, 30, 36, 96, 90, 86, 24, 24, 64, 8, 1, 32, 64, 2, 0, 4, 1, 32], norm. performance: 1.0172041338980207, norm. power: 0.1626740076952648, norm. area: -0.23881527105982617, time of the VLSI flow: 25874.7586.
+2024-06-06 15:13:34,852 [INFO]: evaluate 11-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 60, 70, 54, 12, 12, 64, 4, 1, 32, 64, 4, 1, 2, 1, 8], norm. performance: -0.12960811993021948, norm. power: -0.5470779936513271, norm. area: -0.5538751697572143, time of the VLSI flow: 15456.43379.
+2024-06-06 15:13:34,854 [INFO]: evaluate 12-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 70, 54, 16, 16, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -0.330171013649517, norm. power: -0.2485060702922475, norm. area: -0.2738104924881934, time of the VLSI flow: 15034.8429.
+2024-06-06 15:13:34,856 [INFO]: evaluate 13-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 10, 14, 30, 60, 70, 54, 20, 20, 64, 1, 1, 16, 64, 4, 0, 2, 1, 32], norm. performance: 0.2770932156334688, norm. power: -0.24972056721446945, norm. area: -0.4007958245422417, time of the VLSI flow: 17653.08814.
+2024-06-06 15:13:34,858 [INFO]: evaluate 14-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 14, 20, 36, 64, 70, 54, 16, 16, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -0.29015734224695416, norm. power: 0.09330194349793881, norm. area: -0.6312363792305298, time of the VLSI flow: 16530.56339.
+2024-06-06 15:13:34,860 [INFO]: evaluate 15-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 80, 64, 12, 12, 64, 4, 1, 32, 64, 4, 1, 2, 1, 32], norm. performance: -0.47435672282973296, norm. power: -0.7874998043744129, norm. area: -0.4061269750769412, time of the VLSI flow: 12635.38896.
+2024-06-06 15:13:34,868 [INFO]: summary for 1-th query, current Pareto hypervolume: 5.906548487417262, cost: 222508.94298040704.
+2024-06-06 15:13:34,868 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:34,869 [INFO]: 2-th query, next microarchitecture embeddings: [[4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 72, 70, 54, 20, 20, 32, 8, 1, 32, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0015048980712890625.
+2024-06-06 15:13:34,871 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 72, 70, 54, 20, 20, 32, 8, 1, 32, 64, 4, 1, 2, 1, 32], norm. performance: 0.29865219011209815, norm. power: -0.00832715895360589, norm. area: -0.586910184579798, time of the VLSI flow: 16728.87723.
+2024-06-06 15:13:34,880 [INFO]: summary for 2-th query, current Pareto hypervolume: 5.945275516400509, cost: 239237.8317403295.
+2024-06-06 15:13:34,880 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:34,880 [INFO]: 3-th query, next microarchitecture embeddings: [[8, 5, 5, 2, 26, 5, 4, 44, 5, 4, 36, 24, 40, 48, 120, 138, 138, 36, 36, 64, 8, 2, 16, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.0.
+2024-06-06 15:13:34,883 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 5, 5, 2, 26, 5, 4, 44, 5, 4, 36, 24, 40, 48, 120, 138, 138, 36, 36, 64, 8, 2, 16, 64, 8, 1, 8, 2, 32], norm. performance: 1.3175292109351595, norm. power: 2.05913524168351, norm. area: 2.037139344147227, time of the VLSI flow: 41121.45631.
+2024-06-06 15:13:34,887 [INFO]: summary for 3-th query, current Pareto hypervolume: 5.945275516400509, cost: 280359.2945615409.
+2024-06-06 15:13:34,888 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:34,888 [INFO]: 4-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 10, 12, 20, 36, 62, 58, 12, 12, 64, 1, 1, 16, 64, 4, 0, 2, 1, 8]] 'suggest' time: 0.0010006427764892578.
+2024-06-06 15:13:34,889 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 10, 12, 20, 36, 62, 58, 12, 12, 64, 1, 1, 16, 64, 4, 0, 2, 1, 8], norm. performance: -1.1179679870772135, norm. power: -1.0030972980072792, norm. area: -0.9100680861835162, time of the VLSI flow: 11838.95174.
+2024-06-06 15:13:34,895 [INFO]: summary for 4-th query, current Pareto hypervolume: 5.945275516400509, cost: 292198.25206554844.
+2024-06-06 15:13:34,895 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:34,895 [INFO]: 5-th query, next microarchitecture embeddings: [[8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 18, 30, 36, 90, 90, 86, 28, 28, 64, 8, 2, 16, 64, 4, 1, 4, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:13:34,897 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 18, 30, 36, 90, 90, 86, 28, 28, 64, 8, 2, 16, 64, 4, 1, 4, 1, 32], norm. performance: 0.1508916870250182, norm. power: 0.17044678799748622, norm. area: 0.46077331243018793, time of the VLSI flow: 20784.74137.
+2024-06-06 15:13:34,905 [INFO]: summary for 5-th query, current Pareto hypervolume: 5.945275516400509, cost: 312983.003703283.
+2024-06-06 15:13:34,906 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:34,906 [INFO]: 6-th query, next microarchitecture embeddings: [[8, 5, 5, 2, 24, 5, 5, 40, 5, 2, 32, 26, 45, 50, 120, 146, 146, 36, 36, 64, 8, 2, 16, 64, 8, 1, 8, 1, 32]] 'suggest' time: 0.0009999275207519531.
+2024-06-06 15:13:34,908 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 5, 5, 2, 24, 5, 5, 40, 5, 2, 32, 26, 45, 50, 120, 146, 146, 36, 36, 64, 8, 2, 16, 64, 8, 1, 8, 1, 32], norm. performance: 1.6995178407948741, norm. power: 1.323101526940032, norm. area: 1.687390835735597, time of the VLSI flow: 35802.52936.
+2024-06-06 15:13:34,916 [INFO]: summary for 6-th query, current Pareto hypervolume: 5.945275516400509, cost: 348785.5445746088.
+2024-06-06 15:13:34,917 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:34,917 [INFO]: 7-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 6, 6, 14, 30, 42, 38, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8]] 'suggest' time: 0.0.
+2024-06-06 15:13:34,919 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 6, 6, 14, 30, 42, 38, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.1762427796071722, norm. power: -1.0030972980072792, norm. area: -1.0052666176228975, time of the VLSI flow: 10308.89552.
+2024-06-06 15:13:34,929 [INFO]: summary for 7-th query, current Pareto hypervolume: 5.950543746658996, cost: 359094.45082725957.
+2024-06-06 15:13:34,929 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:34,929 [INFO]: 8-th query, next microarchitecture embeddings: [[8, 4, 4, 2, 24, 4, 4, 40, 4, 2, 32, 20, 32, 40, 132, 138, 138, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:13:34,931 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 4, 4, 2, 24, 4, 4, 40, 4, 2, 32, 20, 32, 40, 132, 138, 138, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 1, 32], norm. performance: 1.1529601116757255, norm. power: 1.824688755817757, norm. area: 1.6810520276654948, time of the VLSI flow: 30915.50851.
+2024-06-06 15:13:34,941 [INFO]: summary for 8-th query, current Pareto hypervolume: 5.950543746658996, cost: 390009.96784093505.
+2024-06-06 15:13:34,941 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:34,941 [INFO]: 9-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 32, 62, 58, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:13:34,943 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 32, 62, 58, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -1.1557096155539908, norm. power: -1.0030972980072792, norm. area: -0.9626131214996508, time of the VLSI flow: 11335.62998.
+2024-06-06 15:13:34,952 [INFO]: summary for 9-th query, current Pareto hypervolume: 5.950543746658996, cost: 401345.60832923395.
+2024-06-06 15:13:34,953 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:34,953 [INFO]: 10-th query, next microarchitecture embeddings: [[8, 5, 5, 2, 28, 5, 5, 48, 5, 5, 40, 20, 35, 40, 140, 128, 128, 28, 28, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.0010013580322265625.
+2024-06-06 15:13:34,955 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 5, 5, 2, 28, 5, 5, 48, 5, 5, 40, 20, 35, 40, 140, 128, 128, 28, 28, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32], norm. performance: 1.6877097172060742, norm. power: 1.9497819388066324, norm. area: 1.354514764961766, time of the VLSI flow: 38945.26555.
+2024-06-06 15:13:34,962 [INFO]: summary for 10-th query, current Pareto hypervolume: 5.950543746658996, cost: 440290.88338689005.
+2024-06-06 15:13:34,962 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:34,962 [INFO]: 11-th query, next microarchitecture embeddings: [[8, 5, 5, 2, 26, 5, 4, 44, 5, 4, 36, 20, 35, 40, 140, 146, 146, 28, 28, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.0.
+2024-06-06 15:13:34,964 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 5, 5, 2, 26, 5, 4, 44, 5, 4, 36, 20, 35, 40, 140, 146, 146, 28, 28, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32], norm. performance: 1.1153724960589673, norm. power: 1.6505298971711084, norm. area: 1.7120032699874066, time of the VLSI flow: 40143.53814.
+2024-06-06 15:13:34,975 [INFO]: summary for 11-th query, current Pareto hypervolume: 5.950543746658996, cost: 480434.4325530341.
+2024-06-06 15:13:34,975 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:34,975 [INFO]: 12-th query, next microarchitecture embeddings: [[8, 4, 4, 2, 28, 4, 4, 44, 4, 4, 36, 24, 40, 48, 128, 118, 118, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.0.
+2024-06-06 15:13:34,977 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 4, 4, 2, 28, 4, 4, 44, 4, 4, 36, 24, 40, 48, 128, 118, 118, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 2, 32], norm. performance: 0.9091083005949282, norm. power: 1.8065684617382034, norm. area: 1.5371287821063364, time of the VLSI flow: 33586.54078.
+2024-06-06 15:13:34,985 [INFO]: summary for 12-th query, current Pareto hypervolume: 5.950543746658996, cost: 514020.9827932449.
+2024-06-06 15:13:34,986 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:34,986 [INFO]: 13-th query, next microarchitecture embeddings: [[8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 18, 30, 36, 108, 90, 86, 24, 24, 64, 8, 1, 32, 64, 2, 0, 4, 1, 32]] 'suggest' time: 0.0010008811950683594.
+2024-06-06 15:13:34,988 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 18, 30, 36, 108, 90, 86, 24, 24, 64, 8, 1, 32, 64, 2, 0, 4, 1, 32], norm. performance: 0.28503830106362554, norm. power: 0.017954554443280226, norm. area: 0.13824444820483303, time of the VLSI flow: 22032.05951.
+2024-06-06 15:13:34,998 [INFO]: summary for 13-th query, current Pareto hypervolume: 5.950543746658996, cost: 536053.0539805101.
+2024-06-06 15:13:34,998 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:34,998 [INFO]: 14-th query, next microarchitecture embeddings: [[8, 4, 4, 2, 28, 4, 4, 44, 4, 4, 36, 24, 40, 48, 128, 138, 138, 32, 32, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.0.
+2024-06-06 15:13:35,004 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 4, 4, 2, 28, 4, 4, 44, 4, 4, 36, 24, 40, 48, 128, 138, 138, 32, 32, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32], norm. performance: 1.0309706228444935, norm. power: 0.7204195742565397, norm. area: 0.7862207459532741, time of the VLSI flow: 37502.4599.
+2024-06-06 15:13:35,031 [INFO]: summary for 14-th query, current Pareto hypervolume: 5.952025952592401, cost: 573555.5454738329.
+2024-06-06 15:13:35,031 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:35,031 [INFO]: 15-th query, next microarchitecture embeddings: [[4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 10, 14, 30, 60, 70, 54, 20, 20, 32, 8, 1, 32, 64, 4, 0, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:13:35,035 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 10, 14, 30, 60, 70, 54, 20, 20, 32, 8, 1, 32, 64, 4, 0, 2, 1, 32], norm. performance: 0.1085226079375771, norm. power: -0.7120552555659766, norm. area: -0.5731434357266818, time of the VLSI flow: 14543.46205.
+2024-06-06 15:13:35,042 [INFO]: summary for 15-th query, current Pareto hypervolume: 6.044792712868299, cost: 588099.017551003.
+2024-06-06 15:13:35,043 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:35,043 [INFO]: 16-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 6, 6, 14, 36, 42, 38, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8]] 'suggest' time: 0.0010001659393310547.
+2024-06-06 15:13:35,046 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 6, 6, 14, 36, 42, 38, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.2239274218082983, norm. power: -1.0030972980072792, norm. area: -0.9922148360450858, time of the VLSI flow: 11609.80836.
+2024-06-06 15:13:35,052 [INFO]: summary for 16-th query, current Pareto hypervolume: 6.044792712868299, cost: 599708.8334259567.
+2024-06-06 15:13:35,052 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:35,052 [INFO]: 17-th query, next microarchitecture embeddings: [[4, 2, 2, 2, 14, 2, 2, 24, 2, 2, 20, 12, 16, 32, 60, 70, 54, 12, 12, 64, 4, 1, 32, 64, 4, 0, 2, 1, 8]] 'suggest' time: 0.0.
+2024-06-06 15:13:35,055 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 14, 2, 2, 24, 2, 2, 20, 12, 16, 32, 60, 70, 54, 12, 12, 64, 4, 1, 32, 64, 4, 0, 2, 1, 8], norm. performance: 0.15508818422003276, norm. power: -0.10364087740959613, norm. area: -0.5843698495254855, time of the VLSI flow: 15447.61637.
+2024-06-06 15:13:35,062 [INFO]: summary for 17-th query, current Pareto hypervolume: 6.044792712868299, cost: 615156.4583191824.
+2024-06-06 15:13:35,062 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:35,063 [INFO]: 18-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 10, 12, 20, 30, 52, 48, 8, 8, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8]] 'suggest' time: 0.0009987354278564453.
+2024-06-06 15:13:35,065 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 10, 12, 20, 30, 52, 48, 8, 8, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.1587460709317976, norm. power: -1.0030972980072792, norm. area: -0.9389915821541358, time of the VLSI flow: 10337.29767.
+2024-06-06 15:13:35,074 [INFO]: summary for 18-th query, current Pareto hypervolume: 6.044792712868299, cost: 625493.766006339.
+2024-06-06 15:13:35,074 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:35,074 [INFO]: 19-th query, next microarchitecture embeddings: [[8, 4, 4, 2, 22, 4, 4, 36, 4, 2, 28, 24, 40, 48, 136, 128, 128, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:13:35,077 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 4, 4, 2, 22, 4, 4, 36, 4, 2, 28, 24, 40, 48, 136, 128, 128, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 1, 32], norm. performance: 1.2336020929589093, norm. power: 1.7023160459346585, norm. area: 1.3613010456484638, time of the VLSI flow: 32345.13377.
+2024-06-06 15:13:35,084 [INFO]: summary for 19-th query, current Pareto hypervolume: 6.044792712868299, cost: 657838.9074176544.
+2024-06-06 15:13:35,084 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:35,084 [INFO]: 20-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 6, 6, 14, 30, 62, 58, 8, 8, 64, 4, 1, 32, 64, 4, 0, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:13:35,086 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 6, 6, 14, 30, 62, 58, 8, 8, 64, 4, 1, 32, 64, 4, 0, 2, 1, 32], norm. performance: -1.1601830533046356, norm. power: -1.0030972980072792, norm. area: -0.912345910638337, time of the VLSI flow: 10653.8544.
+2024-06-06 15:13:35,092 [INFO]: summary for 20-th query, current Pareto hypervolume: 6.044792712868299, cost: 668492.7691337669.
+2024-06-06 15:13:35,092 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:35,092 [INFO]: 21-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 6, 6, 14, 30, 42, 38, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:13:35,094 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 6, 6, 14, 30, 42, 38, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -1.1742533290850912, norm. power: -1.0030972980072792, norm. area: -0.9993326523884201, time of the VLSI flow: 11274.29283.
+2024-06-06 15:13:35,101 [INFO]: summary for 21-th query, current Pareto hypervolume: 6.0448819969749215, cost: 679767.070472926.
+2024-06-06 15:13:35,101 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:35,101 [INFO]: 22-th query, next microarchitecture embeddings: [[8, 5, 5, 2, 28, 5, 5, 48, 5, 5, 40, 20, 35, 40, 130, 146, 146, 32, 32, 64, 8, 2, 32, 64, 8, 0, 8, 2, 32]] 'suggest' time: 0.0.
+2024-06-06 15:13:35,103 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 5, 5, 2, 28, 5, 5, 48, 5, 5, 40, 20, 35, 40, 130, 146, 146, 32, 32, 64, 8, 2, 32, 64, 8, 0, 8, 2, 32], norm. performance: 1.488099159887262, norm. power: 1.4893904455306808, norm. area: 1.256138473697775, time of the VLSI flow: 38912.78206.
+2024-06-06 15:13:35,115 [INFO]: summary for 22-th query, current Pareto hypervolume: 6.0448819969749215, cost: 718679.8640485434.
+2024-06-06 15:13:35,115 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:35,115 [INFO]: 23-th query, next microarchitecture embeddings: [[4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 64, 80, 64, 16, 16, 64, 4, 1, 32, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:13:35,117 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 64, 80, 64, 16, 16, 64, 4, 1, 32, 64, 4, 1, 2, 1, 32], norm. performance: 0.01237760738715526, norm. power: -0.007598460800272916, norm. area: -0.2768590374933424, time of the VLSI flow: 16862.29817.
+2024-06-06 15:13:35,125 [INFO]: summary for 23-th query, current Pareto hypervolume: 6.0448819969749215, cost: 735542.1712417329.
+2024-06-06 15:13:35,125 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:35,125 [INFO]: 24-th query, next microarchitecture embeddings: [[4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 10, 14, 30, 60, 70, 54, 12, 12, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:13:35,127 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 10, 14, 30, 60, 70, 54, 12, 12, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -0.17695082532286305, norm. power: -0.24053897048247033, norm. area: -0.321893943972297, time of the VLSI flow: 13169.32468.
+2024-06-06 15:13:35,133 [INFO]: summary for 24-th query, current Pareto hypervolume: 6.0448819969749215, cost: 748711.5039349813.
+2024-06-06 15:13:35,134 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:13:35,134 [INFO]: 25-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 6, 6, 14, 36, 42, 38, 6, 6, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8]] 'suggest' time: 0.0010001659393310547.
+2024-06-06 15:13:35,136 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 6, 6, 14, 36, 42, 38, 6, 6, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.2367599428605274, norm. power: -1.0030972980072792, norm. area: -0.9983396261450109, time of the VLSI flow: 10453.36891.
+2024-06-06 15:13:35,142 [INFO]: summary for 25-th query, current Pareto hypervolume: 6.0448819969749215, cost: 759164.8823588362.
+2024-06-06 15:13:35,143 [INFO]: summary for the solution, the best Pareto hypervolume: 6.0448819969749215, cost: 759164.8823588362.
+2024-06-06 15:13:35,145 [INFO]: save the experiment result. please refer them to D:\2024spring\EDA\EE215A_project\EE215A_project\Resource\Problem C_cases_0622\output\summary\00ef538e88634ddd9810d034b748c24d.rpt.
+2024-06-06 15:14:48,468 [INFO]: Prolem C @ ICCAD'22 contest platform version: 0.0.9
+2024-06-06 15:14:48,468 [INFO]: load solution settings: {'optimizer': 'fmin_l_bfgs_b', 'random_state': 2022}
+2024-06-06 15:14:48,469 [INFO] use UUID 00ef538e88634ddd9810d034b748c24d to reproduce the experiment results.
+2024-06-06 15:14:49,041 [INFO]: 1-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 6, 6, 14, 34, 52, 48, 8, 8, 32, 8, 1, 32, 64, 4, 1, 2, 1, 32], [4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 6, 6, 14, 36, 62, 58, 12, 12, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 32, 42, 38, 12, 12, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8], [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 36, 62, 58, 6, 6, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], [4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 10, 12, 20, 30, 42, 38, 12, 12, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 12, 16, 32, 64, 70, 54, 12, 12, 64, 1, 1, 16, 64, 4, 0, 2, 1, 32], [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 10, 14, 30, 72, 80, 64, 20, 20, 32, 4, 1, 16, 64, 4, 1, 2, 1, 32], [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 14, 20, 36, 60, 70, 54, 20, 20, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], [4, 2, 2, 2, 14, 2, 2, 24, 2, 2, 20, 12, 16, 32, 64, 90, 74, 20, 20, 32, 8, 1, 32, 64, 4, 1, 2, 1, 8], [8, 3, 3, 2, 20, 3, 3, 36, 3, 3, 28, 18, 30, 36, 96, 90, 86, 24, 24, 64, 8, 1, 32, 64, 2, 0, 4, 1, 32], [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 60, 70, 54, 12, 12, 64, 4, 1, 32, 64, 4, 1, 2, 1, 8], [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 70, 54, 16, 16, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 10, 14, 30, 60, 70, 54, 20, 20, 64, 1, 1, 16, 64, 4, 0, 2, 1, 32], [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 14, 20, 36, 64, 70, 54, 16, 16, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 80, 64, 12, 12, 64, 4, 1, 32, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,044 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 6, 6, 14, 34, 52, 48, 8, 8, 32, 8, 1, 32, 64, 4, 1, 2, 1, 32], norm. performance: -1.1646875762196882, norm. power: -1.0030972980072792, norm. area: -0.9325276614959733, time of the VLSI flow: 11223.3227.
+2024-06-06 15:14:49,046 [INFO]: evaluate 2-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 6, 6, 14, 36, 62, 58, 12, 12, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.1179679870772135, norm. power: -1.0030972980072792, norm. area: -0.92638464594161, time of the VLSI flow: 10443.99227.
+2024-06-06 15:14:49,049 [INFO]: evaluate 3-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 32, 42, 38, 12, 12, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.1179679870772135, norm. power: -1.0030972980072792, norm. area: -0.978949117933987, time of the VLSI flow: 11204.23608.
+2024-06-06 15:14:49,051 [INFO]: evaluate 4-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 36, 62, 58, 6, 6, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.2250267062587095, norm. power: -1.0030972980072792, norm. area: -0.949128636553759, time of the VLSI flow: 10236.07127.
+2024-06-06 15:14:49,054 [INFO]: evaluate 5-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 10, 12, 20, 30, 42, 38, 12, 12, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -1.1354067643098287, norm. power: -1.0030972980072792, norm. area: -0.9559000434610075, time of the VLSI flow: 10844.92708.
+2024-06-06 15:14:49,057 [INFO]: evaluate 6-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 12, 16, 32, 64, 70, 54, 12, 12, 64, 1, 1, 16, 64, 4, 0, 2, 1, 32], norm. performance: 0.006396539162745998, norm. power: -0.030090943799826016, norm. area: -0.437475451962641, time of the VLSI flow: 13894.2623.
+2024-06-06 15:14:49,059 [INFO]: evaluate 7-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 10, 14, 30, 72, 80, 64, 20, 20, 32, 4, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -0.15775149741516778, norm. power: -0.3725790758664567, norm. area: -0.5014193673939702, time of the VLSI flow: 14454.06701.
+2024-06-06 15:14:49,061 [INFO]: evaluate 8-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 14, 20, 36, 60, 70, 54, 20, 20, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: 0.1655257346508645, norm. power: -0.6220853235677636, norm. area: -0.6617076908655323, time of the VLSI flow: 18897.6841.
+2024-06-06 15:14:49,063 [INFO]: evaluate 9-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 14, 2, 2, 24, 2, 2, 20, 12, 16, 32, 64, 90, 74, 20, 20, 32, 8, 1, 32, 64, 4, 1, 2, 1, 8], norm. performance: -0.25460580489888807, norm. power: -0.046510942188268636, norm. area: -0.6667460338467022, time of the VLSI flow: 18125.26494.
+2024-06-06 15:14:49,066 [INFO]: evaluate 10-th candidate in a batch, microarchitecture embedding: [8, 3, 3, 2, 20, 3, 3, 36, 3, 3, 28, 18, 30, 36, 96, 90, 86, 24, 24, 64, 8, 1, 32, 64, 2, 0, 4, 1, 32], norm. performance: 1.0172041338980207, norm. power: 0.1626740076952648, norm. area: -0.23881527105982617, time of the VLSI flow: 25874.7586.
+2024-06-06 15:14:49,068 [INFO]: evaluate 11-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 60, 70, 54, 12, 12, 64, 4, 1, 32, 64, 4, 1, 2, 1, 8], norm. performance: -0.12960811993021948, norm. power: -0.5470779936513271, norm. area: -0.5538751697572143, time of the VLSI flow: 15456.43379.
+2024-06-06 15:14:49,070 [INFO]: evaluate 12-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 70, 54, 16, 16, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -0.330171013649517, norm. power: -0.2485060702922475, norm. area: -0.2738104924881934, time of the VLSI flow: 15034.8429.
+2024-06-06 15:14:49,072 [INFO]: evaluate 13-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 10, 14, 30, 60, 70, 54, 20, 20, 64, 1, 1, 16, 64, 4, 0, 2, 1, 32], norm. performance: 0.2770932156334688, norm. power: -0.24972056721446945, norm. area: -0.4007958245422417, time of the VLSI flow: 17653.08814.
+2024-06-06 15:14:49,074 [INFO]: evaluate 14-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 14, 20, 36, 64, 70, 54, 16, 16, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -0.29015734224695416, norm. power: 0.09330194349793881, norm. area: -0.6312363792305298, time of the VLSI flow: 16530.56339.
+2024-06-06 15:14:49,076 [INFO]: evaluate 15-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 80, 64, 12, 12, 64, 4, 1, 32, 64, 4, 1, 2, 1, 32], norm. performance: -0.47435672282973296, norm. power: -0.7874998043744129, norm. area: -0.4061269750769412, time of the VLSI flow: 12635.38896.
+2024-06-06 15:14:49,085 [INFO]: summary for 1-th query, current Pareto hypervolume: 5.906548487417262, cost: 222508.94523680047.
+2024-06-06 15:14:49,085 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,085 [INFO]: 2-th query, next microarchitecture embeddings: [[4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 72, 70, 54, 20, 20, 32, 8, 1, 32, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,087 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 72, 70, 54, 20, 20, 32, 8, 1, 32, 64, 4, 1, 2, 1, 32], norm. performance: 0.29865219011209815, norm. power: -0.00832715895360589, norm. area: -0.586910184579798, time of the VLSI flow: 16728.87723.
+2024-06-06 15:14:49,097 [INFO]: summary for 2-th query, current Pareto hypervolume: 5.945275516400509, cost: 239237.83454890037.
+2024-06-06 15:14:49,098 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,098 [INFO]: 3-th query, next microarchitecture embeddings: [[8, 5, 5, 2, 26, 5, 4, 44, 5, 4, 36, 24, 40, 48, 120, 138, 138, 36, 36, 64, 8, 2, 16, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,101 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 5, 5, 2, 26, 5, 4, 44, 5, 4, 36, 24, 40, 48, 120, 138, 138, 36, 36, 64, 8, 2, 16, 64, 8, 1, 8, 2, 32], norm. performance: 1.3175292109351595, norm. power: 2.05913524168351, norm. area: 2.037139344147227, time of the VLSI flow: 41121.45631.
+2024-06-06 15:14:49,106 [INFO]: summary for 3-th query, current Pareto hypervolume: 5.945275516400509, cost: 280359.29837266187.
+2024-06-06 15:14:49,106 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,107 [INFO]: 4-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 10, 12, 20, 36, 62, 58, 12, 12, 64, 1, 1, 16, 64, 4, 0, 2, 1, 8]] 'suggest' time: 0.0009987354278564453.
+2024-06-06 15:14:49,109 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 10, 12, 20, 36, 62, 58, 12, 12, 64, 1, 1, 16, 64, 4, 0, 2, 1, 8], norm. performance: -1.1179679870772135, norm. power: -1.0030972980072792, norm. area: -0.9100680861835162, time of the VLSI flow: 11838.95174.
+2024-06-06 15:14:49,112 [INFO]: summary for 4-th query, current Pareto hypervolume: 5.945275516400509, cost: 292198.2568518014.
+2024-06-06 15:14:49,114 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,114 [INFO]: 5-th query, next microarchitecture embeddings: [[8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 18, 30, 36, 90, 90, 86, 28, 28, 64, 8, 2, 16, 64, 4, 1, 4, 1, 32]] 'suggest' time: 0.0015034675598144531.
+2024-06-06 15:14:49,116 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 18, 30, 36, 90, 90, 86, 28, 28, 64, 8, 2, 16, 64, 4, 1, 4, 1, 32], norm. performance: 0.1508916870250182, norm. power: 0.17044678799748622, norm. area: 0.46077331243018793, time of the VLSI flow: 20784.74137.
+2024-06-06 15:14:49,125 [INFO]: summary for 5-th query, current Pareto hypervolume: 5.945275516400509, cost: 312983.01048867573.
+2024-06-06 15:14:49,125 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,125 [INFO]: 6-th query, next microarchitecture embeddings: [[8, 5, 5, 2, 24, 5, 5, 40, 5, 2, 32, 26, 45, 50, 120, 146, 146, 36, 36, 64, 8, 2, 16, 64, 8, 1, 8, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,128 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 5, 5, 2, 24, 5, 5, 40, 5, 2, 32, 26, 45, 50, 120, 146, 146, 36, 36, 64, 8, 2, 16, 64, 8, 1, 8, 1, 32], norm. performance: 1.6995178407948741, norm. power: 1.323101526940032, norm. area: 1.687390835735597, time of the VLSI flow: 35802.52936.
+2024-06-06 15:14:49,137 [INFO]: summary for 6-th query, current Pareto hypervolume: 5.945275516400509, cost: 348785.5488182211.
+2024-06-06 15:14:49,137 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,137 [INFO]: 7-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 6, 6, 14, 30, 42, 38, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,139 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 6, 6, 14, 30, 42, 38, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.1762427796071722, norm. power: -1.0030972980072792, norm. area: -1.0052666176228975, time of the VLSI flow: 10308.89552.
+2024-06-06 15:14:49,148 [INFO]: summary for 7-th query, current Pareto hypervolume: 5.950543746658996, cost: 359094.45535315946.
+2024-06-06 15:14:49,148 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,148 [INFO]: 8-th query, next microarchitecture embeddings: [[8, 4, 4, 2, 24, 4, 4, 40, 4, 2, 32, 20, 32, 40, 132, 138, 138, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,152 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 4, 4, 2, 24, 4, 4, 40, 4, 2, 32, 20, 32, 40, 132, 138, 138, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 1, 32], norm. performance: 1.1529601116757255, norm. power: 1.824688755817757, norm. area: 1.6810520276654948, time of the VLSI flow: 30915.50851.
+2024-06-06 15:14:49,161 [INFO]: summary for 8-th query, current Pareto hypervolume: 5.950543746658996, cost: 390009.97688152915.
+2024-06-06 15:14:49,161 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,162 [INFO]: 9-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 32, 62, 58, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0010037422180175781.
+2024-06-06 15:14:49,164 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 32, 62, 58, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -1.1557096155539908, norm. power: -1.0030972980072792, norm. area: -0.9626131214996508, time of the VLSI flow: 11335.62998.
+2024-06-06 15:14:49,173 [INFO]: summary for 9-th query, current Pareto hypervolume: 5.950543746658996, cost: 401345.619371352.
+2024-06-06 15:14:49,173 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,174 [INFO]: 10-th query, next microarchitecture embeddings: [[8, 5, 5, 2, 28, 5, 5, 48, 5, 5, 40, 20, 35, 40, 140, 128, 128, 28, 28, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.0010006427764892578.
+2024-06-06 15:14:49,176 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 5, 5, 2, 28, 5, 5, 48, 5, 5, 40, 20, 35, 40, 140, 128, 128, 28, 28, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32], norm. performance: 1.6877097172060742, norm. power: 1.9497819388066324, norm. area: 1.354514764961766, time of the VLSI flow: 38945.26555.
+2024-06-06 15:14:49,184 [INFO]: summary for 10-th query, current Pareto hypervolume: 5.950543746658996, cost: 440290.8949468533.
+2024-06-06 15:14:49,184 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,184 [INFO]: 11-th query, next microarchitecture embeddings: [[8, 5, 5, 2, 26, 5, 4, 44, 5, 4, 36, 20, 35, 40, 140, 146, 146, 28, 28, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,187 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 5, 5, 2, 26, 5, 4, 44, 5, 4, 36, 20, 35, 40, 140, 146, 146, 28, 28, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32], norm. performance: 1.1153724960589673, norm. power: 1.6505298971711084, norm. area: 1.7120032699874066, time of the VLSI flow: 40143.53814.
+2024-06-06 15:14:49,196 [INFO]: summary for 11-th query, current Pareto hypervolume: 5.950543746658996, cost: 480434.4438993743.
+2024-06-06 15:14:49,196 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,196 [INFO]: 12-th query, next microarchitecture embeddings: [[8, 4, 4, 2, 28, 4, 4, 44, 4, 4, 36, 24, 40, 48, 128, 118, 118, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,199 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 4, 4, 2, 28, 4, 4, 44, 4, 4, 36, 24, 40, 48, 128, 118, 118, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 2, 32], norm. performance: 0.9091083005949282, norm. power: 1.8065684617382034, norm. area: 1.5371287821063364, time of the VLSI flow: 33586.54078.
+2024-06-06 15:14:49,206 [INFO]: summary for 12-th query, current Pareto hypervolume: 5.950543746658996, cost: 514020.9918228717.
+2024-06-06 15:14:49,206 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,206 [INFO]: 13-th query, next microarchitecture embeddings: [[8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 18, 30, 36, 108, 90, 86, 24, 24, 64, 8, 1, 32, 64, 2, 0, 4, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,208 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 18, 30, 36, 108, 90, 86, 24, 24, 64, 8, 1, 32, 64, 2, 0, 4, 1, 32], norm. performance: 0.28503830106362554, norm. power: 0.017954554443280226, norm. area: 0.13824444820483303, time of the VLSI flow: 22032.05951.
+2024-06-06 15:14:49,220 [INFO]: summary for 13-th query, current Pareto hypervolume: 5.950543746658996, cost: 536053.0643576788.
+2024-06-06 15:14:49,221 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,221 [INFO]: 14-th query, next microarchitecture embeddings: [[8, 4, 4, 2, 28, 4, 4, 44, 4, 4, 36, 24, 40, 48, 128, 138, 138, 32, 32, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.0005028247833251953.
+2024-06-06 15:14:49,223 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 4, 4, 2, 28, 4, 4, 44, 4, 4, 36, 24, 40, 48, 128, 138, 138, 32, 32, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32], norm. performance: 1.0309706228444935, norm. power: 0.7204195742565397, norm. area: 0.7862207459532741, time of the VLSI flow: 37502.4599.
+2024-06-06 15:14:49,234 [INFO]: summary for 14-th query, current Pareto hypervolume: 5.952025952592401, cost: 573555.5364153574.
+2024-06-06 15:14:49,234 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,234 [INFO]: 15-th query, next microarchitecture embeddings: [[4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 10, 14, 30, 60, 70, 54, 20, 20, 32, 8, 1, 32, 64, 4, 0, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,237 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 10, 14, 30, 60, 70, 54, 20, 20, 32, 8, 1, 32, 64, 4, 0, 2, 1, 32], norm. performance: 0.1085226079375771, norm. power: -0.7120552555659766, norm. area: -0.5731434357266818, time of the VLSI flow: 14543.46205.
+2024-06-06 15:14:49,243 [INFO]: summary for 15-th query, current Pareto hypervolume: 6.044792712868299, cost: 588099.0074856859.
+2024-06-06 15:14:49,244 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,244 [INFO]: 16-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 6, 6, 14, 36, 42, 38, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,246 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 6, 6, 14, 36, 42, 38, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.2239274218082983, norm. power: -1.0030972980072792, norm. area: -0.9922148360450858, time of the VLSI flow: 11609.80836.
+2024-06-06 15:14:49,250 [INFO]: summary for 16-th query, current Pareto hypervolume: 6.044792712868299, cost: 599708.8223554668.
+2024-06-06 15:14:49,251 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,251 [INFO]: 17-th query, next microarchitecture embeddings: [[4, 2, 2, 2, 14, 2, 2, 24, 2, 2, 20, 12, 16, 32, 60, 70, 54, 12, 12, 64, 4, 1, 32, 64, 4, 0, 2, 1, 8]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,253 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 14, 2, 2, 24, 2, 2, 20, 12, 16, 32, 60, 70, 54, 12, 12, 64, 4, 1, 32, 64, 4, 0, 2, 1, 8], norm. performance: 0.15508818422003276, norm. power: -0.10364087740959613, norm. area: -0.5843698495254855, time of the VLSI flow: 15447.61637.
+2024-06-06 15:14:49,258 [INFO]: summary for 17-th query, current Pareto hypervolume: 6.044792712868299, cost: 615156.4450504732.
+2024-06-06 15:14:49,258 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,259 [INFO]: 18-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 10, 12, 20, 30, 52, 48, 8, 8, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,261 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 10, 12, 20, 30, 52, 48, 8, 8, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.1587460709317976, norm. power: -1.0030972980072792, norm. area: -0.9389915821541358, time of the VLSI flow: 10337.29767.
+2024-06-06 15:14:49,273 [INFO]: summary for 18-th query, current Pareto hypervolume: 6.044792712868299, cost: 625493.7558151368.
+2024-06-06 15:14:49,273 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,273 [INFO]: 19-th query, next microarchitecture embeddings: [[8, 4, 4, 2, 22, 4, 4, 36, 4, 2, 28, 24, 40, 48, 136, 128, 128, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,275 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 4, 4, 2, 22, 4, 4, 36, 4, 2, 28, 24, 40, 48, 136, 128, 128, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 1, 32], norm. performance: 1.2336020929589093, norm. power: 1.7023160459346585, norm. area: 1.3613010456484638, time of the VLSI flow: 32345.13377.
+2024-06-06 15:14:49,284 [INFO]: summary for 19-th query, current Pareto hypervolume: 6.044792712868299, cost: 657838.8992854351.
+2024-06-06 15:14:49,284 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,284 [INFO]: 20-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 6, 6, 14, 30, 62, 58, 8, 8, 64, 4, 1, 32, 64, 4, 0, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,286 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 6, 6, 14, 30, 62, 58, 8, 8, 64, 4, 1, 32, 64, 4, 0, 2, 1, 32], norm. performance: -1.1601830533046356, norm. power: -1.0030972980072792, norm. area: -0.912345910638337, time of the VLSI flow: 10653.8544.
+2024-06-06 15:14:49,293 [INFO]: summary for 20-th query, current Pareto hypervolume: 6.044792712868299, cost: 668492.7617363536.
+2024-06-06 15:14:49,294 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,294 [INFO]: 21-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 6, 6, 14, 30, 42, 38, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,297 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 6, 6, 14, 30, 42, 38, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -1.1742533290850912, norm. power: -1.0030972980072792, norm. area: -0.9993326523884201, time of the VLSI flow: 11274.29283.
+2024-06-06 15:14:49,303 [INFO]: summary for 21-th query, current Pareto hypervolume: 6.0448819969749215, cost: 679767.0629939736.
+2024-06-06 15:14:49,304 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,304 [INFO]: 22-th query, next microarchitecture embeddings: [[8, 5, 5, 2, 28, 5, 5, 48, 5, 5, 40, 20, 35, 40, 130, 146, 146, 32, 32, 64, 8, 2, 32, 64, 8, 0, 8, 2, 32]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,306 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 5, 5, 2, 28, 5, 5, 48, 5, 5, 40, 20, 35, 40, 130, 146, 146, 32, 32, 64, 8, 2, 32, 64, 8, 0, 8, 2, 32], norm. performance: 1.488099159887262, norm. power: 1.4893904455306808, norm. area: 1.256138473697775, time of the VLSI flow: 38912.78206.
+2024-06-06 15:14:49,313 [INFO]: summary for 22-th query, current Pareto hypervolume: 6.0448819969749215, cost: 718679.8535645632.
+2024-06-06 15:14:49,313 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,313 [INFO]: 23-th query, next microarchitecture embeddings: [[4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 64, 80, 64, 16, 16, 64, 4, 1, 32, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,316 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 64, 80, 64, 16, 16, 64, 4, 1, 32, 64, 4, 1, 2, 1, 32], norm. performance: 0.01237760738715526, norm. power: -0.007598460800272916, norm. area: -0.2768590374933424, time of the VLSI flow: 16862.29817.
+2024-06-06 15:14:49,322 [INFO]: summary for 23-th query, current Pareto hypervolume: 6.0448819969749215, cost: 735542.158802482.
+2024-06-06 15:14:49,322 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,322 [INFO]: 24-th query, next microarchitecture embeddings: [[4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 10, 14, 30, 60, 70, 54, 12, 12, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,324 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 10, 14, 30, 60, 70, 54, 12, 12, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -0.17695082532286305, norm. power: -0.24053897048247033, norm. area: -0.321893943972297, time of the VLSI flow: 13169.32468.
+2024-06-06 15:14:49,335 [INFO]: summary for 24-th query, current Pareto hypervolume: 6.0448819969749215, cost: 748711.4961918611.
+2024-06-06 15:14:49,335 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,335 [INFO]: 25-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 6, 6, 14, 36, 42, 38, 6, 6, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,338 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 6, 6, 14, 36, 42, 38, 6, 6, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.2367599428605274, norm. power: -1.0030972980072792, norm. area: -0.9983396261450109, time of the VLSI flow: 10453.36891.
+2024-06-06 15:14:49,348 [INFO]: summary for 25-th query, current Pareto hypervolume: 6.0448819969749215, cost: 759164.8766177169.
+2024-06-06 15:14:49,349 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,349 [INFO]: 26-th query, next microarchitecture embeddings: [[4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 64, 80, 64, 20, 20, 64, 4, 1, 32, 64, 4, 0, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,351 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 64, 80, 64, 20, 20, 64, 4, 1, 32, 64, 4, 0, 2, 1, 32], norm. performance: -0.4837133573163945, norm. power: -0.8268009247775199, norm. area: -0.6593261553157999, time of the VLSI flow: 17372.16684.
+2024-06-06 15:14:49,360 [INFO]: summary for 26-th query, current Pareto hypervolume: 6.10356163092304, cost: 776537.0534965696.
+2024-06-06 15:14:49,360 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,360 [INFO]: 27-th query, next microarchitecture embeddings: [[8, 4, 4, 2, 28, 4, 4, 44, 4, 4, 36, 22, 36, 44, 136, 138, 138, 36, 36, 64, 8, 2, 16, 64, 8, 0, 8, 2, 32]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,363 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 4, 4, 2, 28, 4, 4, 44, 4, 4, 36, 22, 36, 44, 136, 138, 138, 36, 36, 64, 8, 2, 16, 64, 8, 0, 8, 2, 32], norm. performance: 0.7766798483708455, norm. power: 1.670739125956884, norm. area: 1.4381926881907316, time of the VLSI flow: 37839.93251.
+2024-06-06 15:14:49,368 [INFO]: summary for 27-th query, current Pareto hypervolume: 6.10356163092304, cost: 814376.9940081355.
+2024-06-06 15:14:49,369 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,369 [INFO]: 28-th query, next microarchitecture embeddings: [[8, 4, 4, 2, 24, 4, 4, 40, 4, 2, 32, 20, 32, 40, 132, 138, 138, 36, 36, 64, 8, 1, 32, 64, 8, 1, 8, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,372 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 4, 4, 2, 24, 4, 4, 40, 4, 2, 32, 20, 32, 40, 132, 138, 138, 36, 36, 64, 8, 1, 32, 64, 8, 1, 8, 1, 32], norm. performance: 1.0016106850615967, norm. power: 1.2555754980644833, norm. area: 1.470117067922749, time of the VLSI flow: 32758.91093.
+2024-06-06 15:14:49,377 [INFO]: summary for 28-th query, current Pareto hypervolume: 6.10356163092304, cost: 847135.9115034679.
+2024-06-06 15:14:49,377 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,378 [INFO]: 29-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 8, 8, 16, 30, 62, 58, 8, 8, 64, 4, 1, 32, 64, 4, 1, 2, 1, 8]] 'suggest' time: 0.0010018348693847656.
+2024-06-06 15:14:49,379 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 8, 8, 16, 30, 62, 58, 8, 8, 64, 4, 1, 32, 64, 4, 1, 2, 1, 8], norm. performance: -1.1674541558519569, norm. power: -1.0030972980072792, norm. area: -0.8845868400396155, time of the VLSI flow: 11984.20874.
+2024-06-06 15:14:49,386 [INFO]: summary for 29-th query, current Pareto hypervolume: 6.10356163092304, cost: 859120.1289488456.
+2024-06-06 15:14:49,387 [WARN]: failed in 'suggest' of the optimizer. the error message: 'list' object has no attribute 'astype'
+fall back to random search.
+2024-06-06 15:14:49,387 [INFO]: 30-th query, next microarchitecture embeddings: [[8, 5, 5, 2, 24, 5, 5, 40, 5, 2, 32, 24, 40, 48, 120, 146, 146, 36, 36, 64, 8, 2, 16, 64, 8, 0, 8, 2, 32]] 'suggest' time: 0.0.
+2024-06-06 15:14:49,389 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 5, 5, 2, 24, 5, 5, 40, 5, 2, 32, 24, 40, 48, 120, 146, 146, 36, 36, 64, 8, 2, 16, 64, 8, 0, 8, 2, 32], norm. performance: 1.656045238370966, norm. power: 2.0808504466528412, norm. area: 1.576328577403747, time of the VLSI flow: 39975.96739.
+2024-06-06 15:14:49,404 [INFO]: summary for 30-th query, current Pareto hypervolume: 6.10356163092304, cost: 899096.1138723863.
+2024-06-06 15:14:49,406 [INFO]: summary for the solution, the best Pareto hypervolume: 6.10356163092304, cost: 899096.1138723863.
+2024-06-06 15:14:49,408 [INFO]: save the experiment result. please refer them to D:\2024spring\EDA\EE215A_project\EE215A_project\Resource\Problem C_cases_0622\output\summary\00ef538e88634ddd9810d034b748c24d.rpt.
+2024-06-06 15:17:01,106 [INFO]: Prolem C @ ICCAD'22 contest platform version: 0.0.9
+2024-06-06 15:17:01,106 [INFO]: load solution settings: {'optimizer': 'fmin_l_bfgs_b', 'random_state': 2022}
+2024-06-06 15:17:01,106 [INFO] use UUID 00ef538e88634ddd9810d034b748c24d to reproduce the experiment results.
+2024-06-06 15:17:01,680 [INFO]: 1-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 6, 6, 14, 34, 52, 48, 8, 8, 32, 8, 1, 32, 64, 4, 1, 2, 1, 32], [4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 6, 6, 14, 36, 62, 58, 12, 12, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 32, 42, 38, 12, 12, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8], [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 36, 62, 58, 6, 6, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], [4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 10, 12, 20, 30, 42, 38, 12, 12, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 12, 16, 32, 64, 70, 54, 12, 12, 64, 1, 1, 16, 64, 4, 0, 2, 1, 32], [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 10, 14, 30, 72, 80, 64, 20, 20, 32, 4, 1, 16, 64, 4, 1, 2, 1, 32], [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 14, 20, 36, 60, 70, 54, 20, 20, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], [4, 2, 2, 2, 14, 2, 2, 24, 2, 2, 20, 12, 16, 32, 64, 90, 74, 20, 20, 32, 8, 1, 32, 64, 4, 1, 2, 1, 8], [8, 3, 3, 2, 20, 3, 3, 36, 3, 3, 28, 18, 30, 36, 96, 90, 86, 24, 24, 64, 8, 1, 32, 64, 2, 0, 4, 1, 32], [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 60, 70, 54, 12, 12, 64, 4, 1, 32, 64, 4, 1, 2, 1, 8], [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 70, 54, 16, 16, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 10, 14, 30, 60, 70, 54, 20, 20, 64, 1, 1, 16, 64, 4, 0, 2, 1, 32], [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 14, 20, 36, 64, 70, 54, 16, 16, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 80, 64, 12, 12, 64, 4, 1, 32, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:17:01,683 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 6, 6, 14, 34, 52, 48, 8, 8, 32, 8, 1, 32, 64, 4, 1, 2, 1, 32], norm. performance: -1.1646875762196882, norm. power: -1.0030972980072792, norm. area: -0.9325276614959733, time of the VLSI flow: 11223.3227.
+2024-06-06 15:17:01,684 [INFO]: evaluate 2-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 6, 6, 14, 36, 62, 58, 12, 12, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.1179679870772135, norm. power: -1.0030972980072792, norm. area: -0.92638464594161, time of the VLSI flow: 10443.99227.
+2024-06-06 15:17:01,687 [INFO]: evaluate 3-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 32, 42, 38, 12, 12, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.1179679870772135, norm. power: -1.0030972980072792, norm. area: -0.978949117933987, time of the VLSI flow: 11204.23608.
+2024-06-06 15:17:01,689 [INFO]: evaluate 4-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 36, 62, 58, 6, 6, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.2250267062587095, norm. power: -1.0030972980072792, norm. area: -0.949128636553759, time of the VLSI flow: 10236.07127.
+2024-06-06 15:17:01,692 [INFO]: evaluate 5-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 10, 12, 20, 30, 42, 38, 12, 12, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -1.1354067643098287, norm. power: -1.0030972980072792, norm. area: -0.9559000434610075, time of the VLSI flow: 10844.92708.
+2024-06-06 15:17:01,694 [INFO]: evaluate 6-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 12, 16, 32, 64, 70, 54, 12, 12, 64, 1, 1, 16, 64, 4, 0, 2, 1, 32], norm. performance: 0.006396539162745998, norm. power: -0.030090943799826016, norm. area: -0.437475451962641, time of the VLSI flow: 13894.2623.
+2024-06-06 15:17:01,696 [INFO]: evaluate 7-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 10, 14, 30, 72, 80, 64, 20, 20, 32, 4, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -0.15775149741516778, norm. power: -0.3725790758664567, norm. area: -0.5014193673939702, time of the VLSI flow: 14454.06701.
+2024-06-06 15:17:01,699 [INFO]: evaluate 8-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 14, 20, 36, 60, 70, 54, 20, 20, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: 0.1655257346508645, norm. power: -0.6220853235677636, norm. area: -0.6617076908655323, time of the VLSI flow: 18897.6841.
+2024-06-06 15:17:01,701 [INFO]: evaluate 9-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 14, 2, 2, 24, 2, 2, 20, 12, 16, 32, 64, 90, 74, 20, 20, 32, 8, 1, 32, 64, 4, 1, 2, 1, 8], norm. performance: -0.25460580489888807, norm. power: -0.046510942188268636, norm. area: -0.6667460338467022, time of the VLSI flow: 18125.26494.
+2024-06-06 15:17:01,703 [INFO]: evaluate 10-th candidate in a batch, microarchitecture embedding: [8, 3, 3, 2, 20, 3, 3, 36, 3, 3, 28, 18, 30, 36, 96, 90, 86, 24, 24, 64, 8, 1, 32, 64, 2, 0, 4, 1, 32], norm. performance: 1.0172041338980207, norm. power: 0.1626740076952648, norm. area: -0.23881527105982617, time of the VLSI flow: 25874.7586.
+2024-06-06 15:17:01,705 [INFO]: evaluate 11-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 60, 70, 54, 12, 12, 64, 4, 1, 32, 64, 4, 1, 2, 1, 8], norm. performance: -0.12960811993021948, norm. power: -0.5470779936513271, norm. area: -0.5538751697572143, time of the VLSI flow: 15456.43379.
+2024-06-06 15:17:01,707 [INFO]: evaluate 12-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 70, 54, 16, 16, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -0.330171013649517, norm. power: -0.2485060702922475, norm. area: -0.2738104924881934, time of the VLSI flow: 15034.8429.
+2024-06-06 15:17:01,710 [INFO]: evaluate 13-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 10, 14, 30, 60, 70, 54, 20, 20, 64, 1, 1, 16, 64, 4, 0, 2, 1, 32], norm. performance: 0.2770932156334688, norm. power: -0.24972056721446945, norm. area: -0.4007958245422417, time of the VLSI flow: 17653.08814.
+2024-06-06 15:17:01,713 [INFO]: evaluate 14-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 14, 20, 36, 64, 70, 54, 16, 16, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -0.29015734224695416, norm. power: 0.09330194349793881, norm. area: -0.6312363792305298, time of the VLSI flow: 16530.56339.
+2024-06-06 15:17:01,715 [INFO]: evaluate 15-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 80, 64, 12, 12, 64, 4, 1, 32, 64, 4, 1, 2, 1, 32], norm. performance: -0.47435672282973296, norm. power: -0.7874998043744129, norm. area: -0.4061269750769412, time of the VLSI flow: 12635.38896.
+2024-06-06 15:17:01,722 [INFO]: summary for 1-th query, current Pareto hypervolume: 5.906548487417262, cost: 222508.9420057519.
+2024-06-06 15:17:01,731 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,731 [INFO]: 2-th query, next microarchitecture embeddings: [[8, 3, 3, 2, 16, 3, 3, 32, 3, 2, 24, 18, 30, 36, 108, 100, 96, 24, 24, 64, 8, 2, 16, 64, 4, 1, 4, 1, 32]] 'suggest' time: 0.0090789794921875.
+2024-06-06 15:17:01,734 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 3, 3, 2, 16, 3, 3, 32, 3, 2, 24, 18, 30, 36, 108, 100, 96, 24, 24, 64, 8, 2, 16, 64, 4, 1, 4, 1, 32], norm. performance: 1.098713673860577, norm. power: -0.13108850785181528, norm. area: 0.032614186017994456, time of the VLSI flow: 24664.39856.
+2024-06-06 15:17:01,739 [INFO]: summary for 2-th query, current Pareto hypervolume: 6.225431813417902, cost: 247173.3571496714.
+2024-06-06 15:17:01,741 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,741 [INFO]: 3-th query, next microarchitecture embeddings: [[4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 72, 70, 54, 20, 20, 32, 8, 1, 32, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0015957355499267578.
+2024-06-06 15:17:01,743 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 72, 70, 54, 20, 20, 32, 8, 1, 32, 64, 4, 1, 2, 1, 32], norm. performance: 0.29865219011209815, norm. power: -0.00832715895360589, norm. area: -0.586910184579798, time of the VLSI flow: 16728.87723.
+2024-06-06 15:17:01,752 [INFO]: summary for 3-th query, current Pareto hypervolume: 6.260550468426926, cost: 263902.2464281543.
+2024-06-06 15:17:01,753 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,753 [INFO]: 4-th query, next microarchitecture embeddings: [[4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 12, 16, 32, 72, 80, 64, 16, 16, 32, 4, 1, 16, 64, 4, 0, 2, 1, 8]] 'suggest' time: 0.0.
+2024-06-06 15:17:01,755 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 12, 16, 32, 72, 80, 64, 16, 16, 32, 4, 1, 16, 64, 4, 0, 2, 1, 8], norm. performance: -0.4338273202904088, norm. power: 0.11516288809793647, norm. area: -0.3985950466782321, time of the VLSI flow: 14685.26483.
+2024-06-06 15:17:01,766 [INFO]: summary for 4-th query, current Pareto hypervolume: 6.260550468426926, cost: 278587.5242014221.
+2024-06-06 15:17:01,767 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,767 [INFO]: 5-th query, next microarchitecture embeddings: [[8, 5, 5, 2, 26, 5, 4, 44, 5, 4, 36, 24, 40, 48, 120, 138, 138, 36, 36, 64, 8, 2, 16, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.0009996891021728516.
+2024-06-06 15:17:01,769 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 5, 5, 2, 26, 5, 4, 44, 5, 4, 36, 24, 40, 48, 120, 138, 138, 36, 36, 64, 8, 2, 16, 64, 8, 1, 8, 2, 32], norm. performance: 1.3175292109351595, norm. power: 2.05913524168351, norm. area: 2.037139344147227, time of the VLSI flow: 41121.45631.
+2024-06-06 15:17:01,778 [INFO]: summary for 5-th query, current Pareto hypervolume: 6.260550468426926, cost: 319708.9915204.
+2024-06-06 15:17:01,778 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,779 [INFO]: 6-th query, next microarchitecture embeddings: [[4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 70, 54, 12, 12, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8]] 'suggest' time: 0.0015025138854980469.
+2024-06-06 15:17:01,781 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 70, 54, 12, 12, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: 0.210219136258777, norm. power: -0.38020611653801134, norm. area: -0.34150284161282524, time of the VLSI flow: 13602.39872.
+2024-06-06 15:17:01,790 [INFO]: summary for 6-th query, current Pareto hypervolume: 6.268440333372352, cost: 333311.4017655541.
+2024-06-06 15:17:01,790 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,790 [INFO]: 7-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 10, 12, 20, 36, 62, 58, 12, 12, 64, 1, 1, 16, 64, 4, 0, 2, 1, 8]] 'suggest' time: 0.0.
+2024-06-06 15:17:01,793 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 10, 12, 20, 36, 62, 58, 12, 12, 64, 1, 1, 16, 64, 4, 0, 2, 1, 8], norm. performance: -1.1179679870772135, norm. power: -1.0030972980072792, norm. area: -0.9100680861835162, time of the VLSI flow: 11838.95174.
+2024-06-06 15:17:01,797 [INFO]: summary for 7-th query, current Pareto hypervolume: 6.268440333372352, cost: 345150.3590096854.
+2024-06-06 15:17:01,797 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,797 [INFO]: 8-th query, next microarchitecture embeddings: [[4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 72, 90, 74, 12, 12, 32, 4, 1, 16, 64, 4, 0, 2, 1, 8]] 'suggest' time: 0.0.
+2024-06-06 15:17:01,799 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 72, 90, 74, 12, 12, 32, 4, 1, 16, 64, 4, 0, 2, 1, 8], norm. performance: -0.008720741473435392, norm. power: -0.5104001866002199, norm. area: -0.5313454839675711, time of the VLSI flow: 14985.88563.
+2024-06-06 15:17:01,803 [INFO]: summary for 8-th query, current Pareto hypervolume: 6.268440333372352, cost: 360136.2511539962.
+2024-06-06 15:17:01,803 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,803 [INFO]: 9-th query, next microarchitecture embeddings: [[8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 18, 30, 36, 90, 90, 86, 28, 28, 64, 8, 2, 16, 64, 4, 1, 4, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:17:01,806 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 18, 30, 36, 90, 90, 86, 28, 28, 64, 8, 2, 16, 64, 4, 1, 4, 1, 32], norm. performance: 0.1508916870250182, norm. power: 0.17044678799748622, norm. area: 0.46077331243018793, time of the VLSI flow: 20784.74137.
+2024-06-06 15:17:01,809 [INFO]: summary for 9-th query, current Pareto hypervolume: 6.268440333372352, cost: 380920.99752530275.
+2024-06-06 15:17:01,809 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,810 [INFO]: 10-th query, next microarchitecture embeddings: [[4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 90, 74, 20, 20, 64, 4, 1, 32, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0012042522430419922.
+2024-06-06 15:17:01,812 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 90, 74, 20, 20, 64, 4, 1, 32, 64, 4, 1, 2, 1, 32], norm. performance: 0.004750438411166173, norm. power: -0.5347872847984394, norm. area: -0.5717536167450002, time of the VLSI flow: 15397.934.
+2024-06-06 15:17:01,821 [INFO]: summary for 10-th query, current Pareto hypervolume: 6.268440333372352, cost: 396318.9435618648.
+2024-06-06 15:17:01,823 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,823 [INFO]: 11-th query, next microarchitecture embeddings: [[8, 5, 5, 2, 24, 5, 5, 40, 5, 2, 32, 26, 45, 50, 120, 146, 146, 36, 36, 64, 8, 2, 16, 64, 8, 1, 8, 1, 32]] 'suggest' time: 0.0015034675598144531.
+2024-06-06 15:17:01,825 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 5, 5, 2, 24, 5, 5, 40, 5, 2, 32, 26, 45, 50, 120, 146, 146, 36, 36, 64, 8, 2, 16, 64, 8, 1, 8, 1, 32], norm. performance: 1.6995178407948741, norm. power: 1.323101526940032, norm. area: 1.687390835735597, time of the VLSI flow: 35802.52936.
+2024-06-06 15:17:01,834 [INFO]: summary for 11-th query, current Pareto hypervolume: 6.268440333372352, cost: 432121.48544098594.
+2024-06-06 15:17:01,834 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,835 [INFO]: 12-th query, next microarchitecture embeddings: [[8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 14, 21, 30, 96, 90, 86, 20, 20, 64, 8, 2, 16, 64, 4, 1, 4, 1, 32]] 'suggest' time: 0.0010051727294921875.
+2024-06-06 15:17:01,837 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 14, 21, 30, 96, 90, 86, 20, 20, 64, 8, 2, 16, 64, 4, 1, 4, 1, 32], norm. performance: 0.11058835840865805, norm. power: -0.009250176614494931, norm. area: 0.46488900583437254, time of the VLSI flow: 19321.65123.
+2024-06-06 15:17:01,846 [INFO]: summary for 12-th query, current Pareto hypervolume: 6.268440333372352, cost: 451443.14768759324.
+2024-06-06 15:17:01,846 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,846 [INFO]: 13-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 6, 6, 14, 30, 42, 38, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8]] 'suggest' time: 0.0.
+2024-06-06 15:17:01,848 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 6, 6, 14, 30, 42, 38, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.1762427796071722, norm. power: -1.0030972980072792, norm. area: -1.0052666176228975, time of the VLSI flow: 10308.89552.
+2024-06-06 15:17:01,858 [INFO]: summary for 13-th query, current Pareto hypervolume: 6.273708563630839, cost: 461752.0557379201.
+2024-06-06 15:17:01,858 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,858 [INFO]: 14-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 8, 8, 16, 36, 42, 38, 6, 6, 64, 1, 1, 16, 64, 4, 0, 2, 1, 8]] 'suggest' time: 0.0.
+2024-06-06 15:17:01,861 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 8, 8, 16, 36, 42, 38, 6, 6, 64, 1, 1, 16, 64, 4, 0, 2, 1, 8], norm. performance: -1.1999579341260682, norm. power: -1.0030972980072792, norm. area: -0.986640665675818, time of the VLSI flow: 11396.70002.
+2024-06-06 15:17:01,866 [INFO]: summary for 14-th query, current Pareto hypervolume: 6.273708563630839, cost: 473148.7627733868.
+2024-06-06 15:17:01,867 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,867 [INFO]: 15-th query, next microarchitecture embeddings: [[8, 4, 4, 2, 24, 4, 4, 40, 4, 2, 32, 20, 32, 40, 132, 138, 138, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 1, 32]] 'suggest' time: 0.0009992122650146484.
+2024-06-06 15:17:01,869 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 4, 4, 2, 24, 4, 4, 40, 4, 2, 32, 20, 32, 40, 132, 138, 138, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 1, 32], norm. performance: 1.1529601116757255, norm. power: 1.824688755817757, norm. area: 1.6810520276654948, time of the VLSI flow: 30915.50851.
+2024-06-06 15:17:01,873 [INFO]: summary for 15-th query, current Pareto hypervolume: 6.273708563630839, cost: 504064.2783043371.
+2024-06-06 15:17:01,873 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,873 [INFO]: 16-th query, next microarchitecture embeddings: [[4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 14, 20, 36, 72, 70, 54, 20, 20, 32, 8, 1, 32, 64, 4, 0, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:17:01,876 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 14, 20, 36, 72, 70, 54, 20, 20, 32, 8, 1, 32, 64, 4, 0, 2, 1, 32], norm. performance: -0.4952614958937858, norm. power: -0.36742960891623494, norm. area: -0.47810471385241166, time of the VLSI flow: 17706.34226.
+2024-06-06 15:17:01,887 [INFO]: summary for 16-th query, current Pareto hypervolume: 6.273708563630839, cost: 521770.632099028.
+2024-06-06 15:17:01,887 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,887 [INFO]: 17-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 32, 62, 58, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:17:01,889 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 32, 62, 58, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -1.1557096155539908, norm. power: -1.0030972980072792, norm. area: -0.9626131214996508, time of the VLSI flow: 11335.62998.
+2024-06-06 15:17:01,894 [INFO]: summary for 17-th query, current Pareto hypervolume: 6.273708563630839, cost: 533106.2685888088.
+2024-06-06 15:17:01,895 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,895 [INFO]: 18-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 8, 8, 16, 36, 52, 48, 8, 8, 32, 4, 1, 16, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:17:01,897 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 8, 8, 16, 36, 52, 48, 8, 8, 32, 4, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -1.185575393739519, norm. power: -1.1985827226081474, norm. area: -0.9513578225221487, time of the VLSI flow: 11630.40574.
+2024-06-06 15:17:01,905 [INFO]: summary for 18-th query, current Pareto hypervolume: 6.305013244859163, cost: 544736.6836230803.
+2024-06-06 15:17:01,906 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,906 [INFO]: 19-th query, next microarchitecture embeddings: [[8, 5, 5, 2, 28, 5, 5, 48, 5, 5, 40, 20, 35, 40, 140, 128, 128, 28, 28, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.0.
+2024-06-06 15:17:01,908 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 5, 5, 2, 28, 5, 5, 48, 5, 5, 40, 20, 35, 40, 140, 128, 128, 28, 28, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32], norm. performance: 1.6877097172060742, norm. power: 1.9497819388066324, norm. area: 1.354514764961766, time of the VLSI flow: 38945.26555.
+2024-06-06 15:17:01,915 [INFO]: summary for 19-th query, current Pareto hypervolume: 6.305013244859163, cost: 583681.9576910608.
+2024-06-06 15:17:01,915 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,915 [INFO]: 20-th query, next microarchitecture embeddings: [[4, 2, 2, 2, 14, 2, 2, 24, 2, 2, 20, 14, 20, 36, 64, 80, 64, 20, 20, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8]] 'suggest' time: 0.0.
+2024-06-06 15:17:01,918 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 14, 2, 2, 24, 2, 2, 20, 14, 20, 36, 64, 80, 64, 20, 20, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -0.15068668732255086, norm. power: -0.6577915330810934, norm. area: -0.3341008153852379, time of the VLSI flow: 19358.15349.
+2024-06-06 15:17:01,925 [INFO]: summary for 20-th query, current Pareto hypervolume: 6.3205631440336205, cost: 603040.1186886235.
+2024-06-06 15:17:01,925 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,925 [INFO]: 21-th query, next microarchitecture embeddings: [[8, 5, 5, 2, 26, 5, 4, 44, 5, 4, 36, 20, 35, 40, 140, 146, 146, 28, 28, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.0.
+2024-06-06 15:17:01,927 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 5, 5, 2, 26, 5, 4, 44, 5, 4, 36, 20, 35, 40, 140, 146, 146, 28, 28, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32], norm. performance: 1.1153724960589673, norm. power: 1.6505298971711084, norm. area: 1.7120032699874066, time of the VLSI flow: 40143.53814.
+2024-06-06 15:17:01,931 [INFO]: summary for 21-th query, current Pareto hypervolume: 6.3205631440336205, cost: 643183.6635739619.
+2024-06-06 15:17:01,932 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,932 [INFO]: 22-th query, next microarchitecture embeddings: [[8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 14, 21, 30, 96, 110, 106, 24, 24, 64, 8, 2, 32, 64, 4, 1, 8, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:17:01,934 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 14, 21, 30, 96, 110, 106, 24, 24, 64, 8, 2, 32, 64, 4, 1, 8, 1, 32], norm. performance: 1.083473465528784, norm. power: 0.7109464982632073, norm. area: -0.21531603047550016, time of the VLSI flow: 22353.39448.
+2024-06-06 15:17:01,941 [INFO]: summary for 22-th query, current Pareto hypervolume: 6.328575083429498, cost: 665537.0663125431.
+2024-06-06 15:17:01,941 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,942 [INFO]: 23-th query, next microarchitecture embeddings: [[8, 4, 4, 2, 28, 4, 4, 44, 4, 4, 36, 24, 40, 48, 128, 118, 118, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.0010035037994384766.
+2024-06-06 15:17:01,944 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 4, 4, 2, 28, 4, 4, 44, 4, 4, 36, 24, 40, 48, 128, 118, 118, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 2, 32], norm. performance: 0.9091083005949282, norm. power: 1.8065684617382034, norm. area: 1.5371287821063364, time of the VLSI flow: 33586.54078.
+2024-06-06 15:17:01,954 [INFO]: summary for 23-th query, current Pareto hypervolume: 6.328575083429498, cost: 699123.6201192575.
+2024-06-06 15:17:01,955 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,955 [INFO]: 24-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 10, 12, 20, 32, 42, 38, 8, 8, 32, 8, 1, 32, 64, 4, 0, 2, 1, 8]] 'suggest' time: 0.0009999275207519531.
+2024-06-06 15:17:01,957 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 10, 12, 20, 32, 42, 38, 8, 8, 32, 8, 1, 32, 64, 4, 0, 2, 1, 8], norm. performance: -1.1952428798702557, norm. power: -1.0030972980072792, norm. area: -0.901946279395782, time of the VLSI flow: 11083.10895.
+2024-06-06 15:17:01,972 [INFO]: summary for 24-th query, current Pareto hypervolume: 6.328575083429498, cost: 710206.7475993879.
+2024-06-06 15:17:01,972 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,973 [INFO]: 25-th query, next microarchitecture embeddings: [[8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 18, 30, 36, 108, 90, 86, 24, 24, 64, 8, 1, 32, 64, 2, 0, 4, 1, 32]] 'suggest' time: 0.0009996891021728516.
+2024-06-06 15:17:01,975 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 18, 30, 36, 108, 90, 86, 24, 24, 64, 8, 1, 32, 64, 2, 0, 4, 1, 32], norm. performance: 0.28503830106362554, norm. power: 0.017954554443280226, norm. area: 0.13824444820483303, time of the VLSI flow: 22032.05951.
+2024-06-06 15:17:01,981 [INFO]: summary for 25-th query, current Pareto hypervolume: 6.328575083429498, cost: 732238.8153496109.
+2024-06-06 15:17:01,981 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,981 [INFO]: 26-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 8, 8, 16, 34, 52, 48, 6, 6, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:17:01,984 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 8, 8, 16, 34, 52, 48, 6, 6, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -1.1947751894421244, norm. power: -1.0030972980072792, norm. area: -0.964594361309364, time of the VLSI flow: 11220.34688.
+2024-06-06 15:17:01,992 [INFO]: summary for 26-th query, current Pareto hypervolume: 6.328575083429498, cost: 743459.1714034809.
+2024-06-06 15:17:01,992 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:01,992 [INFO]: 27-th query, next microarchitecture embeddings: [[8, 4, 4, 2, 28, 4, 4, 44, 4, 4, 36, 24, 40, 48, 128, 138, 138, 32, 32, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.0.
+2024-06-06 15:17:01,994 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 4, 4, 2, 28, 4, 4, 44, 4, 4, 36, 24, 40, 48, 128, 138, 138, 32, 32, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32], norm. performance: 1.0309706228444935, norm. power: 0.7204195742565397, norm. area: 0.7862207459532741, time of the VLSI flow: 37502.4599.
+2024-06-06 15:17:02,003 [INFO]: summary for 27-th query, current Pareto hypervolume: 6.328575083429498, cost: 780961.6403209484.
+2024-06-06 15:17:02,003 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:02,004 [INFO]: 28-th query, next microarchitecture embeddings: [[8, 4, 4, 2, 24, 4, 4, 40, 4, 2, 32, 24, 40, 48, 132, 128, 128, 32, 32, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.0009944438934326172.
+2024-06-06 15:17:02,006 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 4, 4, 2, 24, 4, 4, 40, 4, 2, 32, 24, 40, 48, 132, 128, 128, 32, 32, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32], norm. performance: 1.3165358986361373, norm. power: 1.5955860564097812, norm. area: 1.3871793361341629, time of the VLSI flow: 32443.05438.
+2024-06-06 15:17:02,024 [INFO]: summary for 28-th query, current Pareto hypervolume: 6.328575083429498, cost: 813404.7157075326.
+2024-06-06 15:17:02,024 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:02,025 [INFO]: 29-th query, next microarchitecture embeddings: [[4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 10, 14, 30, 60, 70, 54, 20, 20, 32, 8, 1, 32, 64, 4, 0, 2, 1, 32]] 'suggest' time: 0.00099945068359375.
+2024-06-06 15:17:02,027 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 10, 14, 30, 60, 70, 54, 20, 20, 32, 8, 1, 32, 64, 4, 0, 2, 1, 32], norm. performance: 0.1085226079375771, norm. power: -0.7120552555659766, norm. area: -0.5731434357266818, time of the VLSI flow: 14543.46205.
+2024-06-06 15:17:02,046 [INFO]: summary for 29-th query, current Pareto hypervolume: 6.405791944530938, cost: 827948.1994042706.
+2024-06-06 15:17:02,046 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:17:02,047 [INFO]: 30-th query, next microarchitecture embeddings: [[8, 4, 4, 2, 24, 4, 4, 40, 4, 2, 32, 22, 36, 44, 128, 138, 138, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 1, 32]] 'suggest' time: 0.0010039806365966797.
+2024-06-06 15:17:02,049 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 4, 4, 2, 24, 4, 4, 40, 4, 2, 32, 22, 36, 44, 128, 138, 138, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 1, 32], norm. performance: 0.9072050407559773, norm. power: 1.7261687654871005, norm. area: 0.8170693218818709, time of the VLSI flow: 30370.1463.
+2024-06-06 15:17:02,057 [INFO]: summary for 30-th query, current Pareto hypervolume: 6.405791944530938, cost: 858318.3562263978.
+2024-06-06 15:17:02,058 [INFO]: summary for the solution, the best Pareto hypervolume: 6.405791944530938, cost: 858318.3562263978.
+2024-06-06 15:17:02,059 [INFO]: save the experiment result. please refer them to D:\2024spring\EDA\EE215A_project\EE215A_project\Resource\Problem C_cases_0622\output\summary\00ef538e88634ddd9810d034b748c24d.rpt.
+2024-06-06 15:18:01,513 [INFO]: Prolem C @ ICCAD'22 contest platform version: 0.0.9
+2024-06-06 15:18:01,513 [INFO]: load solution settings: {'optimizer': 'fmin_l_bfgs_b', 'random_state': 2022}
+2024-06-06 15:18:01,513 [INFO] use UUID 00ef538e88634ddd9810d034b748c24d to reproduce the experiment results.
+2024-06-06 15:18:02,111 [INFO]: 1-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 6, 6, 14, 34, 52, 48, 8, 8, 32, 8, 1, 32, 64, 4, 1, 2, 1, 32], [4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 6, 6, 14, 36, 62, 58, 12, 12, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 32, 42, 38, 12, 12, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8], [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 36, 62, 58, 6, 6, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], [4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 10, 12, 20, 30, 42, 38, 12, 12, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 12, 16, 32, 64, 70, 54, 12, 12, 64, 1, 1, 16, 64, 4, 0, 2, 1, 32], [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 10, 14, 30, 72, 80, 64, 20, 20, 32, 4, 1, 16, 64, 4, 1, 2, 1, 32], [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 14, 20, 36, 60, 70, 54, 20, 20, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], [4, 2, 2, 2, 14, 2, 2, 24, 2, 2, 20, 12, 16, 32, 64, 90, 74, 20, 20, 32, 8, 1, 32, 64, 4, 1, 2, 1, 8], [8, 3, 3, 2, 20, 3, 3, 36, 3, 3, 28, 18, 30, 36, 96, 90, 86, 24, 24, 64, 8, 1, 32, 64, 2, 0, 4, 1, 32], [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 60, 70, 54, 12, 12, 64, 4, 1, 32, 64, 4, 1, 2, 1, 8], [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 70, 54, 16, 16, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 10, 14, 30, 60, 70, 54, 20, 20, 64, 1, 1, 16, 64, 4, 0, 2, 1, 32], [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 14, 20, 36, 64, 70, 54, 16, 16, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 80, 64, 12, 12, 64, 4, 1, 32, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,114 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 6, 6, 14, 34, 52, 48, 8, 8, 32, 8, 1, 32, 64, 4, 1, 2, 1, 32], norm. performance: -1.1646875762196882, norm. power: -1.0030972980072792, norm. area: -0.9325276614959733, time of the VLSI flow: 11223.3227.
+2024-06-06 15:18:02,116 [INFO]: evaluate 2-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 6, 6, 14, 36, 62, 58, 12, 12, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.1179679870772135, norm. power: -1.0030972980072792, norm. area: -0.92638464594161, time of the VLSI flow: 10443.99227.
+2024-06-06 15:18:02,118 [INFO]: evaluate 3-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 32, 42, 38, 12, 12, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.1179679870772135, norm. power: -1.0030972980072792, norm. area: -0.978949117933987, time of the VLSI flow: 11204.23608.
+2024-06-06 15:18:02,121 [INFO]: evaluate 4-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 36, 62, 58, 6, 6, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.2250267062587095, norm. power: -1.0030972980072792, norm. area: -0.949128636553759, time of the VLSI flow: 10236.07127.
+2024-06-06 15:18:02,123 [INFO]: evaluate 5-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 10, 12, 20, 30, 42, 38, 12, 12, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -1.1354067643098287, norm. power: -1.0030972980072792, norm. area: -0.9559000434610075, time of the VLSI flow: 10844.92708.
+2024-06-06 15:18:02,125 [INFO]: evaluate 6-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 12, 16, 32, 64, 70, 54, 12, 12, 64, 1, 1, 16, 64, 4, 0, 2, 1, 32], norm. performance: 0.006396539162745998, norm. power: -0.030090943799826016, norm. area: -0.437475451962641, time of the VLSI flow: 13894.2623.
+2024-06-06 15:18:02,127 [INFO]: evaluate 7-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 10, 14, 30, 72, 80, 64, 20, 20, 32, 4, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -0.15775149741516778, norm. power: -0.3725790758664567, norm. area: -0.5014193673939702, time of the VLSI flow: 14454.06701.
+2024-06-06 15:18:02,129 [INFO]: evaluate 8-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 14, 20, 36, 60, 70, 54, 20, 20, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: 0.1655257346508645, norm. power: -0.6220853235677636, norm. area: -0.6617076908655323, time of the VLSI flow: 18897.6841.
+2024-06-06 15:18:02,131 [INFO]: evaluate 9-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 14, 2, 2, 24, 2, 2, 20, 12, 16, 32, 64, 90, 74, 20, 20, 32, 8, 1, 32, 64, 4, 1, 2, 1, 8], norm. performance: -0.25460580489888807, norm. power: -0.046510942188268636, norm. area: -0.6667460338467022, time of the VLSI flow: 18125.26494.
+2024-06-06 15:18:02,134 [INFO]: evaluate 10-th candidate in a batch, microarchitecture embedding: [8, 3, 3, 2, 20, 3, 3, 36, 3, 3, 28, 18, 30, 36, 96, 90, 86, 24, 24, 64, 8, 1, 32, 64, 2, 0, 4, 1, 32], norm. performance: 1.0172041338980207, norm. power: 0.1626740076952648, norm. area: -0.23881527105982617, time of the VLSI flow: 25874.7586.
+2024-06-06 15:18:02,135 [INFO]: evaluate 11-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 60, 70, 54, 12, 12, 64, 4, 1, 32, 64, 4, 1, 2, 1, 8], norm. performance: -0.12960811993021948, norm. power: -0.5470779936513271, norm. area: -0.5538751697572143, time of the VLSI flow: 15456.43379.
+2024-06-06 15:18:02,138 [INFO]: evaluate 12-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 70, 54, 16, 16, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -0.330171013649517, norm. power: -0.2485060702922475, norm. area: -0.2738104924881934, time of the VLSI flow: 15034.8429.
+2024-06-06 15:18:02,140 [INFO]: evaluate 13-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 10, 14, 30, 60, 70, 54, 20, 20, 64, 1, 1, 16, 64, 4, 0, 2, 1, 32], norm. performance: 0.2770932156334688, norm. power: -0.24972056721446945, norm. area: -0.4007958245422417, time of the VLSI flow: 17653.08814.
+2024-06-06 15:18:02,143 [INFO]: evaluate 14-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 14, 20, 36, 64, 70, 54, 16, 16, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -0.29015734224695416, norm. power: 0.09330194349793881, norm. area: -0.6312363792305298, time of the VLSI flow: 16530.56339.
+2024-06-06 15:18:02,145 [INFO]: evaluate 15-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 80, 64, 12, 12, 64, 4, 1, 32, 64, 4, 1, 2, 1, 32], norm. performance: -0.47435672282973296, norm. power: -0.7874998043744129, norm. area: -0.4061269750769412, time of the VLSI flow: 12635.38896.
+2024-06-06 15:18:02,154 [INFO]: summary for 1-th query, current Pareto hypervolume: 5.906548487417262, cost: 222508.93939673738.
+2024-06-06 15:18:02,154 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,154 [INFO]: 2-th query, next microarchitecture embeddings: [[8, 3, 3, 2, 16, 3, 3, 32, 3, 2, 24, 18, 30, 36, 108, 100, 96, 24, 24, 64, 8, 2, 16, 64, 4, 1, 4, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,157 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 3, 3, 2, 16, 3, 3, 32, 3, 2, 24, 18, 30, 36, 108, 100, 96, 24, 24, 64, 8, 2, 16, 64, 4, 1, 4, 1, 32], norm. performance: 1.098713673860577, norm. power: -0.13108850785181528, norm. area: 0.032614186017994456, time of the VLSI flow: 24664.39856.
+2024-06-06 15:18:02,165 [INFO]: summary for 2-th query, current Pareto hypervolume: 6.225431813417902, cost: 247173.34768350015.
+2024-06-06 15:18:02,166 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,166 [INFO]: 3-th query, next microarchitecture embeddings: [[4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 72, 70, 54, 20, 20, 32, 8, 1, 32, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0009999275207519531.
+2024-06-06 15:18:02,169 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 12, 16, 32, 72, 70, 54, 20, 20, 32, 8, 1, 32, 64, 4, 1, 2, 1, 32], norm. performance: 0.29865219011209815, norm. power: -0.00832715895360589, norm. area: -0.586910184579798, time of the VLSI flow: 16728.87723.
+2024-06-06 15:18:02,180 [INFO]: summary for 3-th query, current Pareto hypervolume: 6.260550468426926, cost: 263902.2387362941.
+2024-06-06 15:18:02,180 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,180 [INFO]: 4-th query, next microarchitecture embeddings: [[4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 12, 16, 32, 72, 80, 64, 16, 16, 32, 4, 1, 16, 64, 4, 0, 2, 1, 8]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,183 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 12, 16, 32, 72, 80, 64, 16, 16, 32, 4, 1, 16, 64, 4, 0, 2, 1, 8], norm. performance: -0.4338273202904088, norm. power: 0.11516288809793647, norm. area: -0.3985950466782321, time of the VLSI flow: 14685.26483.
+2024-06-06 15:18:02,193 [INFO]: summary for 4-th query, current Pareto hypervolume: 6.260550468426926, cost: 278587.515594273.
+2024-06-06 15:18:02,193 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,193 [INFO]: 5-th query, next microarchitecture embeddings: [[8, 5, 5, 2, 26, 5, 4, 44, 5, 4, 36, 24, 40, 48, 120, 138, 138, 36, 36, 64, 8, 2, 16, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,195 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 5, 5, 2, 26, 5, 4, 44, 5, 4, 36, 24, 40, 48, 120, 138, 138, 36, 36, 64, 8, 2, 16, 64, 8, 1, 8, 2, 32], norm. performance: 1.3175292109351595, norm. power: 2.05913524168351, norm. area: 2.037139344147227, time of the VLSI flow: 41121.45631.
+2024-06-06 15:18:02,206 [INFO]: summary for 5-th query, current Pareto hypervolume: 6.260550468426926, cost: 319708.98212885374.
+2024-06-06 15:18:02,206 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,206 [INFO]: 6-th query, next microarchitecture embeddings: [[4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 70, 54, 12, 12, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,208 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 70, 54, 12, 12, 32, 4, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: 0.210219136258777, norm. power: -0.38020611653801134, norm. area: -0.34150284161282524, time of the VLSI flow: 13602.39872.
+2024-06-06 15:18:02,217 [INFO]: summary for 6-th query, current Pareto hypervolume: 6.268440333372352, cost: 333311.3918766667.
+2024-06-06 15:18:02,217 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,218 [INFO]: 7-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 10, 12, 20, 36, 62, 58, 12, 12, 64, 1, 1, 16, 64, 4, 0, 2, 1, 8]] 'suggest' time: 0.0010008811950683594.
+2024-06-06 15:18:02,220 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 10, 12, 20, 36, 62, 58, 12, 12, 64, 1, 1, 16, 64, 4, 0, 2, 1, 8], norm. performance: -1.1179679870772135, norm. power: -1.0030972980072792, norm. area: -0.9100680861835162, time of the VLSI flow: 11838.95174.
+2024-06-06 15:18:02,225 [INFO]: summary for 7-th query, current Pareto hypervolume: 6.268440333372352, cost: 345150.35015982616.
+2024-06-06 15:18:02,225 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,225 [INFO]: 8-th query, next microarchitecture embeddings: [[4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 72, 90, 74, 12, 12, 32, 4, 1, 16, 64, 4, 0, 2, 1, 8]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,227 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 72, 90, 74, 12, 12, 32, 4, 1, 16, 64, 4, 0, 2, 1, 8], norm. performance: -0.008720741473435392, norm. power: -0.5104001866002199, norm. area: -0.5313454839675711, time of the VLSI flow: 14985.88563.
+2024-06-06 15:18:02,234 [INFO]: summary for 8-th query, current Pareto hypervolume: 6.268440333372352, cost: 360136.2427218463.
+2024-06-06 15:18:02,234 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,234 [INFO]: 9-th query, next microarchitecture embeddings: [[8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 18, 30, 36, 90, 90, 86, 28, 28, 64, 8, 2, 16, 64, 4, 1, 4, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,236 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 18, 30, 36, 90, 90, 86, 28, 28, 64, 8, 2, 16, 64, 4, 1, 4, 1, 32], norm. performance: 0.1508916870250182, norm. power: 0.17044678799748622, norm. area: 0.46077331243018793, time of the VLSI flow: 20784.74137.
+2024-06-06 15:18:02,241 [INFO]: summary for 9-th query, current Pareto hypervolume: 6.268440333372352, cost: 380920.9901173991.
+2024-06-06 15:18:02,242 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,242 [INFO]: 10-th query, next microarchitecture embeddings: [[4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 90, 74, 20, 20, 64, 4, 1, 32, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,244 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 14, 20, 36, 60, 90, 74, 20, 20, 64, 4, 1, 32, 64, 4, 1, 2, 1, 32], norm. performance: 0.004750438411166173, norm. power: -0.5347872847984394, norm. area: -0.5717536167450002, time of the VLSI flow: 15397.934.
+2024-06-06 15:18:02,253 [INFO]: summary for 10-th query, current Pareto hypervolume: 6.268440333372352, cost: 396318.934148384.
+2024-06-06 15:18:02,254 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,254 [INFO]: 11-th query, next microarchitecture embeddings: [[8, 5, 5, 2, 24, 5, 5, 40, 5, 2, 32, 26, 45, 50, 120, 146, 146, 36, 36, 64, 8, 2, 16, 64, 8, 1, 8, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,256 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 5, 5, 2, 24, 5, 5, 40, 5, 2, 32, 26, 45, 50, 120, 146, 146, 36, 36, 64, 8, 2, 16, 64, 8, 1, 8, 1, 32], norm. performance: 1.6995178407948741, norm. power: 1.323101526940032, norm. area: 1.687390835735597, time of the VLSI flow: 35802.52936.
+2024-06-06 15:18:02,265 [INFO]: summary for 11-th query, current Pareto hypervolume: 6.268440333372352, cost: 432121.4746148751.
+2024-06-06 15:18:02,265 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,265 [INFO]: 12-th query, next microarchitecture embeddings: [[8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 14, 21, 30, 96, 90, 86, 20, 20, 64, 8, 2, 16, 64, 4, 1, 4, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,267 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 14, 21, 30, 96, 90, 86, 20, 20, 64, 8, 2, 16, 64, 4, 1, 4, 1, 32], norm. performance: 0.11058835840865805, norm. power: -0.009250176614494931, norm. area: 0.46488900583437254, time of the VLSI flow: 19321.65123.
+2024-06-06 15:18:02,277 [INFO]: summary for 12-th query, current Pareto hypervolume: 6.268440333372352, cost: 451443.13687364175.
+2024-06-06 15:18:02,279 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,279 [INFO]: 13-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 6, 6, 14, 30, 42, 38, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8]] 'suggest' time: 0.0015041828155517578.
+2024-06-06 15:18:02,281 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 6, 6, 14, 30, 42, 38, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -1.1762427796071722, norm. power: -1.0030972980072792, norm. area: -1.0052666176228975, time of the VLSI flow: 10308.89552.
+2024-06-06 15:18:02,292 [INFO]: summary for 13-th query, current Pareto hypervolume: 6.273708563630839, cost: 461752.04598326236.
+2024-06-06 15:18:02,292 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,292 [INFO]: 14-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 8, 8, 16, 36, 42, 38, 6, 6, 64, 1, 1, 16, 64, 4, 0, 2, 1, 8]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,294 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 8, 8, 16, 36, 42, 38, 6, 6, 64, 1, 1, 16, 64, 4, 0, 2, 1, 8], norm. performance: -1.1999579341260682, norm. power: -1.0030972980072792, norm. area: -0.986640665675818, time of the VLSI flow: 11396.70002.
+2024-06-06 15:18:02,300 [INFO]: summary for 14-th query, current Pareto hypervolume: 6.273708563630839, cost: 473148.75308047945.
+2024-06-06 15:18:02,301 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,301 [INFO]: 15-th query, next microarchitecture embeddings: [[8, 4, 4, 2, 24, 4, 4, 40, 4, 2, 32, 20, 32, 40, 132, 138, 138, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,303 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 4, 4, 2, 24, 4, 4, 40, 4, 2, 32, 20, 32, 40, 132, 138, 138, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 1, 32], norm. performance: 1.1529601116757255, norm. power: 1.824688755817757, norm. area: 1.6810520276654948, time of the VLSI flow: 30915.50851.
+2024-06-06 15:18:02,308 [INFO]: summary for 15-th query, current Pareto hypervolume: 6.273708563630839, cost: 504064.2675905214.
+2024-06-06 15:18:02,308 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,308 [INFO]: 16-th query, next microarchitecture embeddings: [[4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 14, 20, 36, 72, 70, 54, 20, 20, 32, 8, 1, 32, 64, 4, 0, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,311 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 12, 2, 2, 20, 2, 2, 16, 14, 20, 36, 72, 70, 54, 20, 20, 32, 8, 1, 32, 64, 4, 0, 2, 1, 32], norm. performance: -0.4952614958937858, norm. power: -0.36742960891623494, norm. area: -0.47810471385241166, time of the VLSI flow: 17706.34226.
+2024-06-06 15:18:02,322 [INFO]: summary for 16-th query, current Pareto hypervolume: 6.273708563630839, cost: 521770.6229010776.
+2024-06-06 15:18:02,322 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,322 [INFO]: 17-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 32, 62, 58, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,325 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 6, 1, 1, 6, 1, 1, 6, 8, 8, 16, 32, 62, 58, 8, 8, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -1.1557096155539908, norm. power: -1.0030972980072792, norm. area: -0.9626131214996508, time of the VLSI flow: 11335.62998.
+2024-06-06 15:18:02,330 [INFO]: summary for 17-th query, current Pareto hypervolume: 6.273708563630839, cost: 533106.259890107.
+2024-06-06 15:18:02,330 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,330 [INFO]: 18-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 8, 8, 16, 36, 52, 48, 8, 8, 32, 4, 1, 16, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,333 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 8, 1, 1, 8, 1, 1, 8, 8, 8, 16, 36, 52, 48, 8, 8, 32, 4, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -1.185575393739519, norm. power: -1.1985827226081474, norm. area: -0.9513578225221487, time of the VLSI flow: 11630.40574.
+2024-06-06 15:18:02,342 [INFO]: summary for 18-th query, current Pareto hypervolume: 6.305013244859163, cost: 544736.677559619.
+2024-06-06 15:18:02,343 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,343 [INFO]: 19-th query, next microarchitecture embeddings: [[8, 5, 5, 2, 28, 5, 5, 48, 5, 5, 40, 20, 35, 40, 140, 128, 128, 28, 28, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.001001596450805664.
+2024-06-06 15:18:02,345 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 5, 5, 2, 28, 5, 5, 48, 5, 5, 40, 20, 35, 40, 140, 128, 128, 28, 28, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32], norm. performance: 1.6877097172060742, norm. power: 1.9497819388066324, norm. area: 1.354514764961766, time of the VLSI flow: 38945.26555.
+2024-06-06 15:18:02,355 [INFO]: summary for 19-th query, current Pareto hypervolume: 6.305013244859163, cost: 583681.9546776884.
+2024-06-06 15:18:02,355 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,355 [INFO]: 20-th query, next microarchitecture embeddings: [[4, 2, 2, 2, 14, 2, 2, 24, 2, 2, 20, 14, 20, 36, 64, 80, 64, 20, 20, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,357 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 2, 14, 2, 2, 24, 2, 2, 20, 14, 20, 36, 64, 80, 64, 20, 20, 64, 1, 1, 16, 64, 4, 1, 2, 1, 8], norm. performance: -0.15068668732255086, norm. power: -0.6577915330810934, norm. area: -0.3341008153852379, time of the VLSI flow: 19358.15349.
+2024-06-06 15:18:02,371 [INFO]: summary for 20-th query, current Pareto hypervolume: 6.3205631440336205, cost: 603040.1216783925.
+2024-06-06 15:18:02,371 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,371 [INFO]: 21-th query, next microarchitecture embeddings: [[8, 5, 5, 2, 26, 5, 4, 44, 5, 4, 36, 20, 35, 40, 140, 146, 146, 28, 28, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,373 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 5, 5, 2, 26, 5, 4, 44, 5, 4, 36, 20, 35, 40, 140, 146, 146, 28, 28, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32], norm. performance: 1.1153724960589673, norm. power: 1.6505298971711084, norm. area: 1.7120032699874066, time of the VLSI flow: 40143.53814.
+2024-06-06 15:18:02,381 [INFO]: summary for 21-th query, current Pareto hypervolume: 6.3205631440336205, cost: 643183.6705205257.
+2024-06-06 15:18:02,382 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,382 [INFO]: 22-th query, next microarchitecture embeddings: [[8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 14, 21, 30, 96, 110, 106, 24, 24, 64, 8, 2, 32, 64, 4, 1, 8, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,383 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 14, 21, 30, 96, 110, 106, 24, 24, 64, 8, 2, 32, 64, 4, 1, 8, 1, 32], norm. performance: 1.083473465528784, norm. power: 0.7109464982632073, norm. area: -0.21531603047550016, time of the VLSI flow: 22353.39448.
+2024-06-06 15:18:02,391 [INFO]: summary for 22-th query, current Pareto hypervolume: 6.328575083429498, cost: 665537.0720162308.
+2024-06-06 15:18:02,391 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,391 [INFO]: 23-th query, next microarchitecture embeddings: [[8, 4, 4, 2, 28, 4, 4, 44, 4, 4, 36, 24, 40, 48, 128, 118, 118, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,394 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 4, 4, 2, 28, 4, 4, 44, 4, 4, 36, 24, 40, 48, 128, 118, 118, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 2, 32], norm. performance: 0.9091083005949282, norm. power: 1.8065684617382034, norm. area: 1.5371287821063364, time of the VLSI flow: 33586.54078.
+2024-06-06 15:18:02,398 [INFO]: summary for 23-th query, current Pareto hypervolume: 6.328575083429498, cost: 699123.6187953191.
+2024-06-06 15:18:02,399 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,399 [INFO]: 24-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 10, 12, 20, 32, 42, 38, 8, 8, 32, 8, 1, 32, 64, 4, 0, 2, 1, 8]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,401 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 10, 12, 20, 32, 42, 38, 8, 8, 32, 8, 1, 32, 64, 4, 0, 2, 1, 8], norm. performance: -1.1952428798702557, norm. power: -1.0030972980072792, norm. area: -0.901946279395782, time of the VLSI flow: 11083.10895.
+2024-06-06 15:18:02,408 [INFO]: summary for 24-th query, current Pareto hypervolume: 6.328575083429498, cost: 710206.7357549913.
+2024-06-06 15:18:02,408 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,408 [INFO]: 25-th query, next microarchitecture embeddings: [[8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 18, 30, 36, 108, 90, 86, 24, 24, 64, 8, 1, 32, 64, 2, 0, 4, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,411 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 3, 3, 1, 16, 3, 3, 32, 3, 1, 24, 18, 30, 36, 108, 90, 86, 24, 24, 64, 8, 1, 32, 64, 2, 0, 4, 1, 32], norm. performance: 0.28503830106362554, norm. power: 0.017954554443280226, norm. area: 0.13824444820483303, time of the VLSI flow: 22032.05951.
+2024-06-06 15:18:02,416 [INFO]: summary for 25-th query, current Pareto hypervolume: 6.328575083429498, cost: 732238.8027749382.
+2024-06-06 15:18:02,416 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,417 [INFO]: 26-th query, next microarchitecture embeddings: [[4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 8, 8, 16, 34, 52, 48, 6, 6, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32]] 'suggest' time: 0.0009984970092773438.
+2024-06-06 15:18:02,418 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 1, 1, 1, 10, 1, 1, 12, 1, 1, 12, 8, 8, 16, 34, 52, 48, 6, 6, 64, 1, 1, 16, 64, 4, 1, 2, 1, 32], norm. performance: -1.1947751894421244, norm. power: -1.0030972980072792, norm. area: -0.964594361309364, time of the VLSI flow: 11220.34688.
+2024-06-06 15:18:02,424 [INFO]: summary for 26-th query, current Pareto hypervolume: 6.328575083429498, cost: 743459.1560672058.
+2024-06-06 15:18:02,424 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,425 [INFO]: 27-th query, next microarchitecture embeddings: [[8, 4, 4, 2, 28, 4, 4, 44, 4, 4, 36, 24, 40, 48, 128, 138, 138, 32, 32, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.001001119613647461.
+2024-06-06 15:18:02,427 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 4, 4, 2, 28, 4, 4, 44, 4, 4, 36, 24, 40, 48, 128, 138, 138, 32, 32, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32], norm. performance: 1.0309706228444935, norm. power: 0.7204195742565397, norm. area: 0.7862207459532741, time of the VLSI flow: 37502.4599.
+2024-06-06 15:18:02,438 [INFO]: summary for 27-th query, current Pareto hypervolume: 6.328575083429498, cost: 780961.6300193585.
+2024-06-06 15:18:02,439 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,439 [INFO]: 28-th query, next microarchitecture embeddings: [[8, 4, 4, 2, 24, 4, 4, 40, 4, 2, 32, 24, 40, 48, 132, 128, 128, 32, 32, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32]] 'suggest' time: 0.0015058517456054688.
+2024-06-06 15:18:02,442 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 4, 4, 2, 24, 4, 4, 40, 4, 2, 32, 24, 40, 48, 132, 128, 128, 32, 32, 64, 8, 2, 32, 64, 8, 1, 8, 2, 32], norm. performance: 1.3165358986361373, norm. power: 1.5955860564097812, norm. area: 1.3871793361341629, time of the VLSI flow: 32443.05438.
+2024-06-06 15:18:02,461 [INFO]: summary for 28-th query, current Pareto hypervolume: 6.328575083429498, cost: 813404.7071850221.
+2024-06-06 15:18:02,461 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,461 [INFO]: 29-th query, next microarchitecture embeddings: [[4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 10, 14, 30, 60, 70, 54, 20, 20, 32, 8, 1, 32, 64, 4, 0, 2, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,463 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [4, 2, 2, 1, 12, 2, 2, 20, 2, 1, 16, 10, 14, 30, 60, 70, 54, 20, 20, 32, 8, 1, 32, 64, 4, 0, 2, 1, 32], norm. performance: 0.1085226079375771, norm. power: -0.7120552555659766, norm. area: -0.5731434357266818, time of the VLSI flow: 14543.46205.
+2024-06-06 15:18:02,480 [INFO]: summary for 29-th query, current Pareto hypervolume: 6.405791944530938, cost: 827948.1867592644.
+2024-06-06 15:18:02,480 [WARN]: failed in 'suggest' of the optimizer. the error message: random_sample() got an unexpected keyword argument 'k'
+fall back to random search.
+2024-06-06 15:18:02,480 [INFO]: 30-th query, next microarchitecture embeddings: [[8, 4, 4, 2, 24, 4, 4, 40, 4, 2, 32, 22, 36, 44, 128, 138, 138, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 1, 32]] 'suggest' time: 0.0.
+2024-06-06 15:18:02,482 [INFO]: evaluate 1-th candidate in a batch, microarchitecture embedding: [8, 4, 4, 2, 24, 4, 4, 40, 4, 2, 32, 22, 36, 44, 128, 138, 138, 28, 28, 64, 8, 1, 32, 64, 8, 1, 8, 1, 32], norm. performance: 0.9072050407559773, norm. power: 1.7261687654871005, norm. area: 0.8170693218818709, time of the VLSI flow: 30370.1463.
+2024-06-06 15:18:02,492 [INFO]: summary for 30-th query, current Pareto hypervolume: 6.405791944530938, cost: 858318.344674064.
+2024-06-06 15:18:02,493 [INFO]: summary for the solution, the best Pareto hypervolume: 6.405791944530938, cost: 858318.344674064.
+2024-06-06 15:18:02,495 [INFO]: save the experiment result. please refer them to D:\2024spring\EDA\EE215A_project\EE215A_project\Resource\Problem C_cases_0622\output\summary\00ef538e88634ddd9810d034b748c24d.rpt.
