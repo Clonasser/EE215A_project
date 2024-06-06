@@ -54,6 +54,7 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
             random_state=random_state
         )
         self.n_suggestions = 5
+        self.x_idx = []
         self.x = []
         self.y = []
         self.init = True
@@ -100,7 +101,11 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
         best_weighted_ppa, best_ppa, best_index = sorted_ppas_with_indices[0]
 
         # print("Best PPA:", best_ppa)
-
+        # print(self.x)
+        # print(sorted_ppas_with_indices[0][-1])
+        # print(self.x_idx[sorted_ppas_with_indices[0][-1]])
+        # # print(self.design_space.vec_to_idx(sorted_ppas_with_indices[0][-1]))
+        # exit(0)
         return sorted_ppas_with_indices
 
     def suggest(self):
@@ -127,7 +132,7 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
             # x_guess = np.concatenate((x_guess,  np.random.normal(mu, sigma, size=5).astype(int)))
            
             mu = self.design_space.size / 2
-            sigma = self.design_space.size / 20
+            sigma = self.design_space.size / 10
             x_guess = np.concatenate((x_guess, np.random.normal(mu, sigma, size=10).astype(int)))
 
             # Random
@@ -136,11 +141,14 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
             # ).astype(int)))
 
             x_guess = np.clip(x_guess, 1, self.design_space.size)
+            # print(x_guess.tolist())
+            self.x_idx.extend(x_guess.tolist())
             potential_suggest =  [
                 self.design_space.vec_to_microarchitecture_embedding(
                     self.design_space.idx_to_vec(_x_guess)
                 ) for _x_guess in x_guess
             ]
+            
             return potential_suggest
         
         else:
@@ -150,24 +158,34 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
 
             sorted_ppas_with_indices = self.get_best()
             
-            x_guess = random.sample(
-                range(sorted_ppas_with_indices[0][-1], sorted_ppas_with_indices[1][-1]), k=self.n_suggestions
-            )
-            lower_bound = min(sorted_ppas_with_indices[1][-1] , sorted_ppas_with_indices[0][-1] )  
-            upper_bound = max(sorted_ppas_with_indices[1][-1] , sorted_ppas_with_indices[0][-1] )  
+            # x_guess = random.sample(
+            #     range(sorted_ppas_with_indices[0][-1], sorted_ppas_with_indices[1][-1]), k=self.n_suggestions
+            # )
+
+            # Find bayesian optimization bound
+            lower_bound = min(self.x_idx[sorted_ppas_with_indices[1][-1]], 
+                              self.x_idx[sorted_ppas_with_indices[0][-1]])
+            upper_bound = max(self.x_idx[sorted_ppas_with_indices[1][-1]], 
+                              self.x_idx[sorted_ppas_with_indices[0][-1]])
             x_guess =  np.array(random.sample(range(lower_bound, upper_bound), k=1)).astype(int)
 
-            lower_bound = min(sorted_ppas_with_indices[2][-1] , sorted_ppas_with_indices[0][-1] )  
-            upper_bound = max(sorted_ppas_with_indices[2][-1] , sorted_ppas_with_indices[0][-1] )  
-            x_guess = np.concatenate((x_guess, np.array(random.sample(range(lower_bound, upper_bound), k=1)).astype(int)))
+            # lower_bound = min(self.x_idx[sorted_ppas_with_indices[2][-1]], 
+            #                   self.x_idx[sorted_ppas_with_indices[0][-1]])
+            # upper_bound = max(self.x_idx[sorted_ppas_with_indices[2][-1]], 
+            #                   self.x_idx[sorted_ppas_with_indices[0][-1]])
+            # x_guess = np.concatenate((x_guess, np.array(random.sample(range(lower_bound, upper_bound), k=1)).astype(int)))
 
-            lower_bound = min(sorted_ppas_with_indices[3][-1] , sorted_ppas_with_indices[0][-1] )  
-            upper_bound = max(sorted_ppas_with_indices[3][-1] , sorted_ppas_with_indices[0][-1] )  
-            x_guess = np.concatenate((x_guess, np.array(random.sample(range(lower_bound, upper_bound), k=1)).astype(int)))
+            # lower_bound = min(self.x_idx[sorted_ppas_with_indices[1][-1]], 
+            #                   self.x_idx[sorted_ppas_with_indices[2][-1]])
+            # upper_bound = max(self.x_idx[sorted_ppas_with_indices[1][-1]], 
+            #                   self.x_idx[sorted_ppas_with_indices[2][-1]])
+            # x_guess = np.concatenate((x_guess, np.array(random.sample(range(lower_bound, upper_bound), k=1)).astype(int)))
 
-            x_guess = np.concatenate((x_guess, np.array(random.sample(range(1, self.design_space.size+1), k=1)).astype(int)))
-
-
+            # Add a random point
+            # x_guess = np.concatenate((x_guess, np.array(random.sample(range(1, self.design_space.size+1), k=1)).astype(int)))
+            # Clip
+            x_guess = np.clip(x_guess, 1, self.design_space.size)
+            self.x_idx.extend(x_guess.tolist())
             potential_suggest =  [
                 self.design_space.vec_to_microarchitecture_embedding(
                     self.design_space.idx_to_vec(_x_guess)
