@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${file}",
+            "args": ["-o", "output", "-s", ".\\gp-configs.json", "-u", "00ef538e88634ddd9810d034b748c24d", "-q", "30"],
+            "console": "integratedTerminal"
+        }
+    ]
+}

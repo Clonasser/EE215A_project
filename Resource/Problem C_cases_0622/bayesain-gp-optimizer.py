@@ -20,7 +20,7 @@
     the code is only for example demonstration.
 """
 
-
+import sys, os
 import random
 import torch
 import sklearn
@@ -144,39 +144,29 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
             return potential_suggest
         
         else:
-            
+            # What happened?
+            # if return none, it will samplpe a point randomly
+            # return 
+
             sorted_ppas_with_indices = self.get_best()
             
-            # x_guess = random.sample(
-            #     range(sorted_ppas_with_indices[0][-1], sorted_ppas_with_indices[1][-1]), k=self.n_suggestions
-            # )
-            # lower_bound = min(sorted_ppas_with_indices[1][-1] , sorted_ppas_with_indices[0][-1] )  
-            # upper_bound = max(sorted_ppas_with_indices[1][-1] , sorted_ppas_with_indices[0][-1] )  
-            # x_guess =  np.array(random.sample(range(lower_bound, upper_bound), k=1)).astype(int)
-
-            # lower_bound = min(sorted_ppas_with_indices[2][-1] , sorted_ppas_with_indices[0][-1] )  
-            # upper_bound = max(sorted_ppas_with_indices[2][-1] , sorted_ppas_with_indices[0][-1] )  
-            # x_guess = np.concatenate((x_guess, np.array(random.sample(range(lower_bound, upper_bound), k=1)).astype(int)))
-
-            # lower_bound = min(sorted_ppas_with_indices[3][-1] , sorted_ppas_with_indices[0][-1] )  
-            # upper_bound = max(sorted_ppas_with_indices[3][-1] , sorted_ppas_with_indices[0][-1] )  
-            # x_guess = np.concatenate((x_guess, np.array(random.sample(range(lower_bound, upper_bound), k=1)).astype(int)))
-
-            # x_guess = np.concatenate((x_guess, np.array(random.sample(range(1, self.design_space.size+1), k=1)).astype(int)))
-
+            x_guess = random.sample(
+                range(sorted_ppas_with_indices[0][-1], sorted_ppas_with_indices[1][-1]), k=self.n_suggestions
+            )
             lower_bound = min(sorted_ppas_with_indices[1][-1] , sorted_ppas_with_indices[0][-1] )  
             upper_bound = max(sorted_ppas_with_indices[1][-1] , sorted_ppas_with_indices[0][-1] )  
-            x_guess =  np.random.sample(range(lower_bound, upper_bound), k=1).astype(int)
+            x_guess =  np.array(random.sample(range(lower_bound, upper_bound), k=1)).astype(int)
 
             lower_bound = min(sorted_ppas_with_indices[2][-1] , sorted_ppas_with_indices[0][-1] )  
             upper_bound = max(sorted_ppas_with_indices[2][-1] , sorted_ppas_with_indices[0][-1] )  
-            x_guess = np.concatenate((x_guess, np.random.sample(range(lower_bound, upper_bound), k=1)).astype(int))
+            x_guess = np.concatenate((x_guess, np.array(random.sample(range(lower_bound, upper_bound), k=1)).astype(int)))
 
             lower_bound = min(sorted_ppas_with_indices[3][-1] , sorted_ppas_with_indices[0][-1] )  
             upper_bound = max(sorted_ppas_with_indices[3][-1] , sorted_ppas_with_indices[0][-1] )  
-            x_guess = np.concatenate((x_guess, np.random.sample(range(lower_bound, upper_bound), k=1)).astype(int))
+            x_guess = np.concatenate((x_guess, np.array(random.sample(range(lower_bound, upper_bound), k=1)).astype(int)))
 
-            x_guess = np.concatenate((x_guess, np.random.sample(range(1, self.design_space.size+1), k=1)).astype(int))
+            x_guess = np.concatenate((x_guess, np.array(random.sample(range(1, self.design_space.size+1), k=1)).astype(int)))
+
 
             potential_suggest =  [
                 self.design_space.vec_to_microarchitecture_embedding(
@@ -227,4 +217,5 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
 
 
 if __name__ == "__main__":
+
     experiment(GaussianProcessRegressorOptimizer)
