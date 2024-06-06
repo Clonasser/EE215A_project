@@ -47,6 +47,7 @@ class RandomSearchOptimizer(AbstractOptimizer):
             range(1, self.design_space.size + 1),
             size=self.n_suggestions
         )
+        #design space range(1, 15634)
         return [
             self.design_space.vec_to_microarchitecture_embedding(
                 self.design_space.idx_to_vec(_x_guess)
