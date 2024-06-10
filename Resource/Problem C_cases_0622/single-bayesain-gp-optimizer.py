@@ -35,7 +35,6 @@ from scipy.stats import norm
 
 
 
-
 class GaussianProcessRegressorOptimizer(AbstractOptimizer):
     primary_import = "iccad_contest"
 
@@ -108,8 +107,6 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
         # # print(self.design_space.vec_to_idx(sorted_ppas_with_indices[0][-1]))
         # exit(0)
         return sorted_ppas_with_indices
-    def take2abs4(self, elem):
-        return abs(elem[1]*elem[2]*elem[3])
 
     def suggest(self):
         """
@@ -170,92 +167,40 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
                               self.x_idx[sorted_ppas_with_indices[0][-1]])
             upper_bound = max(self.x_idx[sorted_ppas_with_indices[1][-1]], 
                               self.x_idx[sorted_ppas_with_indices[0][-1]])
-            x_guess =  np.array(random.sample(range(lower_bound, upper_bound), k=5)).astype(int)
+            x_guess =  np.array(random.sample(range(lower_bound, upper_bound), k=1)).astype(int)
 
             # lower_bound = min(self.x_idx[sorted_ppas_with_indices[2][-1]], 
             #                   self.x_idx[sorted_ppas_with_indices[0][-1]])
             # upper_bound = max(self.x_idx[sorted_ppas_with_indices[2][-1]], 
             #                   self.x_idx[sorted_ppas_with_indices[0][-1]])
-            # x_guess = np.concatenate((x_guess, np.array(random.sample(range(lower_bound, upper_bound), k=5)).astype(int)))
+            # x_guess = np.concatenate((x_guess, np.array(random.sample(range(lower_bound, upper_bound), k=1)).astype(int)))
 
             # lower_bound = min(self.x_idx[sorted_ppas_with_indices[1][-1]], 
             #                   self.x_idx[sorted_ppas_with_indices[2][-1]])
             # upper_bound = max(self.x_idx[sorted_ppas_with_indices[1][-1]], 
             #                   self.x_idx[sorted_ppas_with_indices[2][-1]])
-            # x_guess = np.concatenate((x_guess, np.array(random.sample(range(lower_bound, upper_bound), k=5)).astype(int)))
+            # x_guess = np.concatenate((x_guess, np.array(random.sample(range(lower_bound, upper_bound), k=1)).astype(int)))
 
             # Add a random point
-            # x_guess = np.concatenate((x_guess, np.array(random.sample(range(1, self.design_space.size+1), k=2)).astype(int)))
+            # x_guess = np.concatenate((x_guess, np.array(random.sample(range(1, self.design_space.size+1), k=1)).astype(int)))
             # Clip
             x_guess = np.clip(x_guess, 1, self.design_space.size)
-            # print(x_guess)
             self.x_idx.extend(x_guess.tolist())
             potential_suggest =  [
                 self.design_space.vec_to_microarchitecture_embedding(
                     self.design_space.idx_to_vec(_x_guess)
                 ) for _x_guess in x_guess
             ]
-            # print(len(potential_suggest))
+
         try:
             # NOTICE: we can also use the model to sweep the design space if
             # the design space is not quite large.
             # NOTICE: we only use a very naive way to pick up the design just for demonstration only.
+            
             ppa = torch.Tensor(self.model.predict(np.array(potential_suggest)))
             # print(ppa)
             potential_parteo_frontier = get_pareto_frontier(ppa)
-            # print(potential_parteo_frontier)
-
-            # if empty, randomly select a point
-            if potential_parteo_frontier.numel() == 0:
-                # Add a random point
-                x_guess = np.concatenate((x_guess, np.array(random.sample(range(1, self.design_space.size+1), k=1)).astype(int)))
-                # Clip
-                x_guess = np.clip(x_guess, 1, self.design_space.size)
-                potential_suggest =  [
-                    self.design_space.vec_to_microarchitecture_embedding(
-                        self.design_space.idx_to_vec(_x_guess)
-                    ) for _x_guess in x_guess
-                ]
-                return potential_suggest
-
-            mask_value = []
-            for i in range(len(potential_parteo_frontier)):
-                mask_value.append([i]+[ele for ele in potential_parteo_frontier[i]])
-            mask_value.sort(key=self.take2abs4, reverse=True)
-
-            # print(mask_value[1][0])
-            
-            # select one or two best point(s)
-            mask = []
-            for i in range(len(potential_parteo_frontier)):
-                if len(mask_value) > 1:
-                    if i == mask_value[0][0] or i == mask_value[1][0]:
-                        mask.append([True, True, True])
-                    else:
-                        mask.append([False, False, False])
-                else:
-                    if i == mask_value[0][0]:
-                        mask.append([True, True, True])
-                    else:
-                        mask.append([False, False, False])     
-                         
-                        
-            mask = torch.tensor(mask)
-            # print(mask) 
-            # print(potential_parteo_frontier)
-            potential_parteo_frontier = torch.masked_select(potential_parteo_frontier, mask)
-            num_selected = potential_parteo_frontier.size(0)
-            original_width = 3
-            potential_parteo_frontier = potential_parteo_frontier.view(-1, original_width)
-            # print(potential_parteo_frontier)
-            # exit(0)
-             
-            # print(potential_parteo_frontier)
-            # if potential_parteo_frontier.numel() == 0:
-            #     exit(0)
-
             _potential_suggest = []
-            # for point in potential_parteo_frontier:
             for point in potential_parteo_frontier:
                 index = torch.all(ppa == point.unsqueeze(0), axis=1)
                 _potential_suggest.append(
@@ -263,8 +208,6 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
                         torch.all(ppa == point.unsqueeze(0), axis=1)
                     ].tolist()[0]
                 )
-            # print("i'm here")    
-            # exit(0)
             return _potential_suggest
         except sklearn.exceptions.NotFittedError:
             return potential_suggest
