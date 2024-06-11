@@ -96,7 +96,6 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
     def get_best(self):
         # ppa weights
         weights = np.array([1, 1, 1])
-
         weighted_ppas_with_indices = [(sum(weights * ppa), ppa, idx) for idx, ppa in enumerate(self.y)]
         sorted_ppas_with_indices = sorted(weighted_ppas_with_indices, key=lambda x: x[0], reverse=True)
         best_weighted_ppa, best_ppa, best_index = sorted_ppas_with_indices[0]
@@ -109,7 +108,12 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
         # exit(0)
         return sorted_ppas_with_indices
     def take2abs4(self, elem):
-        return abs(elem[1]*elem[2]*elem[3])
+        # l1 norm
+        return abs(elem[1])+abs(elem[2])+abs(elem[3])
+        # l2 norm
+        # return np.sqrt(elem[1]**2+elem[2]**2+elem[3]**2)
+        # abs weight
+        # return abs(elem[1]*elem[2]*elem[3])
 
     def suggest(self):
         """
@@ -143,7 +147,7 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
             #     range(1, self.design_space.size + 1), k=5
             # ).astype(int)))
 
-            x_guess = np.clip(x_guess, 1, self.design_space.size)
+            x_guess = np.clip(x_guess, 1, self.design_space.size-1)
             # print(x_guess.tolist())
             self.x_idx.extend(x_guess.tolist())
             potential_suggest =  [
@@ -159,18 +163,34 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
             # if return none, it will samplpe a point randomly
             # return 
 
-            sorted_ppas_with_indices = self.get_best()
             
+            # Random selection
             # x_guess = random.sample(
             #     range(sorted_ppas_with_indices[0][-1], sorted_ppas_with_indices[1][-1]), k=self.n_suggestions
             # )
 
             # Find bayesian optimization bound
-            lower_bound = min(self.x_idx[sorted_ppas_with_indices[1][-1]], 
-                              self.x_idx[sorted_ppas_with_indices[0][-1]])
-            upper_bound = max(self.x_idx[sorted_ppas_with_indices[1][-1]], 
-                              self.x_idx[sorted_ppas_with_indices[0][-1]])
-            x_guess =  np.array(random.sample(range(lower_bound, upper_bound), k=5)).astype(int)
+            sorted_ppas_with_indices = self.get_best()
+            lower_bound = abs(min(self.x_idx[sorted_ppas_with_indices[1][-1]], 
+                              self.x_idx[sorted_ppas_with_indices[0][-1]]))
+            upper_bound = abs(max(self.x_idx[sorted_ppas_with_indices[1][-1]], 
+                              self.x_idx[sorted_ppas_with_indices[0][-1]]))
+            
+            # sota
+            # x_guess =  np.array(random.sample(range(lower_bound, upper_bound), k=5)).astype(int)
+            # advoid too small bound
+            if upper_bound - lower_bound > 2:
+                sample_num  = 5 if upper_bound - lower_bound > 5 else upper_bound - lower_bound
+                x_guess =  np.array(random.sample(range(lower_bound, upper_bound), k=sample_num)).astype(int)
+            else:
+                x_guess = np.array(random.sample(range(1, self.design_space.size+1), k=1)).astype(int)
+                self.x_idx.extend(x_guess.tolist())
+                potential_suggest =  [
+                    self.design_space.vec_to_microarchitecture_embedding(
+                        self.design_space.idx_to_vec(_x_guess)
+                    ) for _x_guess in x_guess
+                ]
+                return potential_suggest
 
             # lower_bound = min(self.x_idx[sorted_ppas_with_indices[2][-1]], 
             #                   self.x_idx[sorted_ppas_with_indices[0][-1]])
@@ -185,10 +205,10 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
             # x_guess = np.concatenate((x_guess, np.array(random.sample(range(lower_bound, upper_bound), k=5)).astype(int)))
 
             # Add a random point
-            # x_guess = np.concatenate((x_guess, np.array(random.sample(range(1, self.design_space.size+1), k=2)).astype(int)))
+            # x_guess = np.concatenate((x_guess, np.array(random.sample(range(1, self.design_space.size+1), k=10)).astype(int)))
+            
             # Clip
-            x_guess = np.clip(x_guess, 1, self.design_space.size)
-            # print(x_guess)
+            x_guess = np.clip(x_guess, 1, self.design_space.size-1)
             self.x_idx.extend(x_guess.tolist())
             potential_suggest =  [
                 self.design_space.vec_to_microarchitecture_embedding(
@@ -208,9 +228,9 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
             # if empty, randomly select a point
             if potential_parteo_frontier.numel() == 0:
                 # Add a random point
-                x_guess = np.concatenate((x_guess, np.array(random.sample(range(1, self.design_space.size+1), k=1)).astype(int)))
+                x_guess = np.concatenate((x_guess, np.array(random.sample(range(1, self.design_space.size), k=1)).astype(int)))
                 # Clip
-                x_guess = np.clip(x_guess, 1, self.design_space.size)
+                x_guess = np.clip(x_guess, 1, self.design_space.size-1)
                 potential_suggest =  [
                     self.design_space.vec_to_microarchitecture_embedding(
                         self.design_space.idx_to_vec(_x_guess)
@@ -244,7 +264,7 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
             # print(mask) 
             # print(potential_parteo_frontier)
             potential_parteo_frontier = torch.masked_select(potential_parteo_frontier, mask)
-            num_selected = potential_parteo_frontier.size(0)
+            # num_selected = potential_parteo_frontier.size(0)
             original_width = 3
             potential_parteo_frontier = potential_parteo_frontier.view(-1, original_width)
             # print(potential_parteo_frontier)
