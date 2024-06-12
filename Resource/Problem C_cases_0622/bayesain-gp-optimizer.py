@@ -175,13 +175,22 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
                               self.x_idx[sorted_ppas_with_indices[0][-1]]))
             upper_bound = abs(max(self.x_idx[sorted_ppas_with_indices[1][-1]], 
                               self.x_idx[sorted_ppas_with_indices[0][-1]]))
-            
+
+            #Find linear opportunity
+            mirror_bound = np.clip(( 2 * self.x_idx[sorted_ppas_with_indices[0][-1]] - self.x_idx[sorted_ppas_with_indices[1][-1]] ),
+                                   1, self.design_space.size)
+            linear_lower_bound = abs(min(mirror_bound, 
+                              self.x_idx[sorted_ppas_with_indices[0][-1]]))
+            linear_upper_bound = abs(max(mirror_bound, 
+                              self.x_idx[sorted_ppas_with_indices[0][-1]]))
+
             # sota
             # x_guess =  np.array(random.sample(range(lower_bound, upper_bound), k=5)).astype(int)
             # advoid too small bound
             if upper_bound - lower_bound > 2:
                 sample_num  = 5 if upper_bound - lower_bound > 5 else upper_bound - lower_bound
-                x_guess =  np.array(random.sample(range(lower_bound, upper_bound), k=sample_num)).astype(int)
+                x_guess =  np.array(random.sample(range(lower_bound, upper_bound), k=sample_num)).astype(int)          
+            # jump out of the optimization trap
             else:
                 x_guess = np.array(random.sample(range(1, self.design_space.size+1), k=1)).astype(int)
                 self.x_idx.extend(x_guess.tolist())
@@ -191,6 +200,14 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
                     ) for _x_guess in x_guess
                 ]
                 return potential_suggest
+
+            # Find 1st derivative opportunity
+            if linear_upper_bound -linear_lower_bound > 200:
+                x_guess =  np.concatenate(x_guess, np.array(random.sample(range(linear_lower_bound, linear_upper_bound), k=1)).astype(int)) 
+            # Add some random points
+            if x_guess.size < 5:
+                sample_num = 5 - x_guess.size
+                x_guess = np.concatenate((x_guess, np.array(random.sample(range(1, self.design_space.size+1), k=sample_num)).astype(int)))
 
             # lower_bound = min(self.x_idx[sorted_ppas_with_indices[2][-1]], 
             #                   self.x_idx[sorted_ppas_with_indices[0][-1]])
@@ -208,7 +225,7 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
             # x_guess = np.concatenate((x_guess, np.array(random.sample(range(1, self.design_space.size+1), k=10)).astype(int)))
             
             # Clip
-            x_guess = np.clip(x_guess, 1, self.design_space.size-1)
+            x_guess = np.clip(x_guess, 1, self.design_space.size+1)
             self.x_idx.extend(x_guess.tolist())
             potential_suggest =  [
                 self.design_space.vec_to_microarchitecture_embedding(
