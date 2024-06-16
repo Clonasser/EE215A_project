@@ -60,39 +60,6 @@ class GaussianProcessRegressorOptimizer(AbstractOptimizer):
         self.y = []
         self.init = True
 
-    def expected_improvement(self, x_new, y_best, model, xi=0.01):
-        """
-        Expected Improvement (EI) acquisition function.
-
-        Parameters
-        ----------
-        x_new: <numpy.ndarray>
-            A new point to evaluate the EI at.
-        y_best: float
-            The best observed performance so far.
-        model: <sklearn.gaussian_process.GaussianProcessRegressor>
-            The trained Gaussian process model.
-        xi: float
-            Exploration-exploitation trade-off parameter.
-
-        Returns
-        -------
-        ei: float
-            The expected improvement value at `x_new`.
-        """
-        with np.errstate(divide='ignore', invalid='ignore'):
-            mu, sigma = self.model.predict(x_new, return_std=True)
-            mu, sigma = mu[0], sigma[0]
-
-            # Ensure positive sigma
-            sigma = np.maximum(sigma, 1e-6)
-
-            # Calculate EI
-            z = (mu - y_best - xi) / sigma
-            ei = (mu - y_best - xi) * norm.cdf(z) + sigma * norm.pdf(z)
-
-        return ei
-
     def get_best(self):
         # ppa weights
         weights = np.array([1, 1, 1])
